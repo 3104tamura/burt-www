@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>blog</title>
+      
+	  <!-- Favicon Icon -->
+      <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon.png">
+     <!--  <link rel="icon" type="image/png" href="images/favicon.png"> -->
+      
+	  <!-- Bootstrap CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      
+	  <!-- Custom CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      
+	  <!-- Owl Carousel -->
+      <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css">
+      
+	  <!-- Font Awesome -->
+      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107192322-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107192322-1');
+</script>
+
+   </head>
+   <body>
+      
+	  <!-- Preloder -->
+	  <div id="preloader"></div>
+      <!-- End Preloder -->
+	  
+	  <!-- Navbar -->
+      <nav class="navbar top-navbar" role="navigation">
+         <div class="container">
+            <div class="navbar-header col-sm-2">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.png" ></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown">
+                     <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">プランから選ぶ<b class="caret"></b></a>
+                     <!-- <ul class="dropdown-menu">
+                        <li>
+                           <a href="categories.html"><i class="fa fa-fw fa-angle-right"></i> Categories</a>
+                        </li>
+                        <li>
+                           <a href="category-grid.html"><i class="fa fa-fw fa-angle-right"></i> Category Grid</a>
+                        </li>
+                        <li>
+                           <a href="single.html"><i class="fa fa-fw fa-angle-right"></i> Single Item</a>
+                        </li>
+                     </ul> -->
+                  </li>
+                  <li><a href="pricing.html">料金</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li class="dropdown">
+                     <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Blog <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="blog.html"><i class="fa fa-fw fa-angle-right"></i> Blog</a>
+                        </li>
+                        <li>
+                           <a href="blog_details.html"><i class="fa fa-fw fa-angle-right"></i> Blog Details</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <!-- <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> Other Pages <b class="caret"></b></a> -->
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="create_post.html"><i class="fa fa-fw fa-angle-right"></i> Post Your Ad</a>
+                        </li>
+                        <li>
+                           <a href="settings.html"><i class="fa fa-fw fa-angle-right"></i> Settings</a>
+                        </li>
+                        <li>
+                           <a href="close-account.html"><i class="fa fa-fw fa-angle-right"></i> Close account</a>
+                        </li>
+                        <li>
+                           <a href="my-ads.html"><i class="fa fa-fw fa-angle-right"></i> My Ads</a>
+                        </li>
+                        <li>
+                           <a href="favourite.html"><i class="fa fa-fw fa-angle-right"></i> Favourite Ads</a>
+                        </li>
+                        <li>
+                           <a href="privacy.html"><i class="fa fa-fw fa-angle-right"></i> Privacy Policy</a>
+                        </li>
+                        <li>
+                           <a href="404.html"><i class="fa fa-fw fa-angle-right"></i> 404</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="user-login pull-right">
+                  <a href="signup.html">新規登録</a>
+                  <span>or</span>  
+                  <a class="btn btn-md btn-primary" href="login.html">ログイン</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- End Navbar -->
+      
+	  <!-- Breadcumb -->
+      <section class="breadcumb_area">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12 text-center">
+                  <div class="breadcumb_section">
+                     <div class="page_title">
+                        <h3>Trainer Blog</h3>
+                     </div>
+                     <div class="page_pagination">
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                           <li>Blog</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End Breadcumb -->
+      
+	  <!-- Blog -->
+      <section class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a3.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">田中 サトシ</span> </small>
+                              <br>
+                              <small class="text-muted">21.03.2017, 06:45 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-image">
+                        <img class="img-responsive" src="http://www.ansonika.com/lovefit/img/workout_3.jpg" alt="">
+                        <div class="title">
+                           <a href="blog_details.html">
+                              <h4>ブログ タイトル</h4>
+                           </a>
+                           <small>見出し1見出し1見出し1</small>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <p>
+                           多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+
+
+
+エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+
+
+
+
+                        </p>
+                        
+                     </div>
+                  </div>
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a5.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">田中 サトシ</span> </small>
+                              <br>
+                              <small class="text-muted">17.05.2017, 10:25 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <a href="blog_details.html">
+                           <h4>ボディメイク＆ダイエットの基礎知識</h4>
+                        </a>
+                        <p>
+                           多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+
+
+
+エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+                        </p>
+                        <p>
+                           
+
+                        </p>
+                        <a href="blog_details.html" class="btn btn-primary btn-xs">Read more</a>
+                     </div>
+                  </div>
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a6.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">田中 サトシ</span> </small>
+                              <br>
+                              <small class="text-muted">22.12.2017, 04:17 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <a href="blog_details.html">
+                           <h4>くびれは1日にしてならず</h4>
+                        </a>
+                        <p>
+                           くびれを作るためには毎日の努力の積み重ねが大事。日ごろから楽ちんな洋服を着ないようにしたり、腹筋に力を入れて生活したり、時間があるときにはエクササイズするなど、コツコツと心がけることが美しいくびれを作ることにつながるはず。気持ちがゆるんでいるとウエストまわりもゆるんでくるということですね。薄着の季節を乗り切るために、あなたも何かはじめてみませんか？
+                        </p>
+                        <p>
+                           
+                        </p>
+                        <a href="blog_details.html" class="btn btn-primary btn-xs">Read more</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a1.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">根元タケル</span> </small>
+                              <br>
+                              <small class="text-muted">22.04.2017, 10:15 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <a href="blog_details.html">
+                           <h4>くびれは1日にしてならず</h4>
+                        </a>
+                        <p>
+                           多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+
+
+
+エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+                        </p>
+                        <p>
+                           
+                        </p>
+                        <a href="blog_details.html" class="btn btn-primary btn-xs">Read more</a>
+                     </div>
+                  </div>
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a7.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">田村 サトシ</span> </small>
+                              <br>
+                              <small class="text-muted">01.02.2017, 10:40 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <a href="blog_details.html">
+                           <h4>ボディメイク＆ダイエットの基礎知識</h4>
+                        </a>
+                        <p>
+                           多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+
+
+
+エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+                        </p>
+                        <p>
+                           
+                        </p>
+                     </div>
+                  </div>
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a4.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">田中聡子</span> </small>
+                              <br>
+                              <small class="text-muted">10.07.2017, 02:12 am</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-image">
+                        <img class="img-responsive" src="http://www.ansonika.com/lovefit/img/slides/slide_1.jpg" alt="">
+                        <div class="title">
+                           <a href="blog_details.html">
+                              <h4>寝る前に"キク"ボディメイク術</h4>
+                           </a>
+                           <small>サブタイトル</small>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <p>
+                           多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+
+
+
+エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+                        </p>
+                        <p>
+                           
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a2.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">シバタ タカシ</span> </small>
+                              <br>
+                              <small class="text-muted">11.10.2017, 11:46 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <a href="blog_details.html">
+                           <h4>ボディメイク＆ダイエットの基礎知識</h4>
+                        </a>
+                        <p>
+                           多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+
+
+
+エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+                        </p>
+                        <p>
+                           
+                        </p>
+                     </div>
+                  </div>
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a8.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">田村 サトシ</span> </small>
+                              <br>
+                              <small class="text-muted">16.02.2017, 08:34 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-image">
+                        <img class="img-responsive" src="http://www.ansonika.com/lovefit/img/slides/slide_2.jpg" alt="">
+                        <div class="title">
+                           <a href="blog_details.html">
+                              <h4>くびれは1日にしてならず</h4>
+                           </a>
+                           <small>サブタイトル</small>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <p>
+                           多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+
+
+
+エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+                        </p>
+                        <p>
+                          
+                        </p>
+                        <a href="blog_details.html" class="btn btn-primary btn-xs">Read more</a>
+                     </div>
+                  </div>
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a5.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">田中 サトシ</span> </small>
+                              <br>
+                              <small class="text-muted">17.05.2017, 10:25 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <a href="blog_details.html">
+                           <h4>くびれは1日にしてならず</h4>
+                        </a>
+                        <p>
+                           くびれを作るためには毎日の努力の積み重ねが大事。日ごろから楽ちんな洋服を着ないようにしたり、腹筋に力を入れて生活したり、時間があるときにはエクササイズするなど、コツコツと心がけることが美しいくびれを作ることにつながるはず。気持ちがゆるんでいるとウエストまわりもゆるんでくるということですね。薄着の季節を乗り切るために、あなたも何かはじめてみませんか？
+                        </p>
+                        <p>
+                           
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a4.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">田中聡子</span> </small>
+                              <br>
+                              <small class="text-muted">10.07.2017, 02:12 am</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-image">
+                        <img class="img-responsive" src="http://www.ansonika.com/lovefit/img/slides/slide_3.jpg" alt="">
+                        <div class="title">
+                           <a href="blog_details.html">
+                              <h4>ボディメイク＆ダイエットの基礎知識</h4>
+                           </a>
+                           <small>サブタイトル</small>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <p>
+                           多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+
+
+
+エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+                        </p>
+                        <p>
+                          
+                        </p>
+                        <a href="blog_details.html" class="btn btn-primary btn-xs">Read more</a>
+                     </div>
+                  </div>
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a3.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">Mike Smith</span> </small>
+                              <br>
+                              <small class="text-muted">21.03.2017, 06:45 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <a href="blog_details.html">
+                           <h4>エステでダイエットできない理由・エステで痩せない理由は？</h4>
+                        </a>
+                        <p>
+                           エステで痩せない理由は？
+エステのマッサージダイエット、エステの骨盤ダイエット、エステ脚やせダイエット　生理学上、エステ痩身ダイエットは、ダイエットできる、脂肪が減る、基礎代謝が上がるという身体メカニズムから見て科学的根拠はありません。
+
+下記、図をご覧ください。痩せるためには、式の右側、基礎代謝量を増やすか、活動量を増やすか、UCP・DITを増やすかしかありません。 
+                        </p>
+                        <p>
+                           
+                        </p>
+                        <a href="blog_details.html" class="btn btn-primary btn-xs">Read more</a>
+                     </div>
+                  </div>
+                  <div class="panel blog-box">
+                     <div class="panel-heading">
+                        <div class="media clearfix">
+                           <a class="pull-left">
+                           <img src="images/blog/user/a1.jpg" alt="profile-picture">
+                           </a>
+                           <div class="media-body">
+                              <small>Created by: <span class="font-bold">根元タケル</span> </small>
+                              <br>
+                              <small class="text-muted">22.04.2017, 10:15 pm</small>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-body">
+                        <a href="blog_details.html">
+                           <h4>くびれは1日にしてならず</h4>
+                        </a>
+                        <p>
+                           くびれを作るためには毎日の努力の積み重ねが大事。日ごろから楽ちんな洋服を着ないようにしたり、腹筋に力を入れて生活したり、時間があるときにはエクササイズするなど、コツコツと心がけることが美しいくびれを作ることにつながるはず。気持ちがゆるんでいるとウエストまわりもゆるんでくるということですね。薄着の季節を乗り切るために、あなたも何かはじめてみませんか？
+                        </p>
+                        <p>
+                           
+                        </p>
+                        <a href="blog_details.html" class="btn btn-primary btn-xs">Read more</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="text-center">
+                  <ul class="pagination pagination-sm">
+                     <li class="disabled"><a href="#">«</a></li>
+                     <li class="active"><a href="#">1</a></li>
+                     <li><a href="#">2</a></li>
+                     <li><a href="#">3</a></li>
+                     <li><a href="#">4</a></li>
+                     <li><a href="#">5</a></li>
+                     <li><a href="#">»</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- End Blog -->
+      
+	  <!-- Footer -->
+      <footer>
+         
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="bottom-social-icons social-icon text-center">  
+                        <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+                        <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <!-- <a href="#" target="_blank" class="dribble"><i class="fa fa-dribbble"></i></a> -->
+                        <a href="#" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+                       <!--  <a href="#" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
+                        <!-- <a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+                     </div>
+                     <div class="site-info text-center">
+                        <p>&copy; Copyright 2017  All Rights Reserved<br> <!-- Made with <i class="fa fa-heart"></i> by <a target="_blank" href=""><strong>testtest</strong></a> --></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer -->
+      
+	  <!-- Post Ad -->
+      <a href="create_post.html" data-toggle="tooltip" data-placement="left" title="Post Your Ad" class="btn btn-primary btn-lg post-free-add-btn"><i class="fa fa-pencil"></i></a>
+	  <!-- End Post Ad -->
+	  
+	  <!-- Back To Top -->
+	  <a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+      <!-- End Back To Top -->
+	  
+	  <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+      
+	  <!-- Custom js -->
+      <script src="js/custom.js"></script>
+      
+	  <!-- Bootstrap JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      
+	  <!-- Owl Carousel -->
+      <script src="plugins/owl-carousel/owl.carousel.js"></script>
+      
+	  <!-- Filestyle -->
+      <script src="plugins/bootstrap-filestyle/bootstrap-filestyle.js"></script>
+   </body>
+</html>
