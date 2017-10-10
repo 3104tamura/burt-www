@@ -7,21 +7,21 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <title>BRUT 出張型パーソナルトレーニングサービス</title>
-      
-	  <!-- Favicon Icon -->
+
+    <!-- Favicon Icon -->
       <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon.png">
 
      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css" />
-	  <!-- Custom CSS -->
+    <!-- Custom CSS -->
       <link href="css/style.css" rel="stylesheet">
-      
-	  <!-- Owl Carousel -->
+
+    <!-- Owl Carousel -->
       <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
       <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css">
-      
-	  <!-- Font Awesome -->
+
+    <!-- Font Awesome -->
       <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
       <!-- Global Site Tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107192322-1"></script>
@@ -35,12 +35,12 @@
 
    </head>
    <body>
-	  
-	  <!-- Preloder -->
-	  <div id="preloader"></div>
-	  <!-- End Preloder -->
-	  
-	  <!-- Navbar -->
+
+    <!-- Preloder -->
+    <div id="preloader"></div>
+    <!-- End Preloder -->
+
+    <!-- Navbar -->
       <nav class="navbar top-navbar" role="navigation">
          <div class="container">
             <div class="navbar-header col-sm-2">
@@ -118,17 +118,17 @@
                </ul>
                <div class="user-login pull-right">
                   <a href="signup.html">新規登録</a>
-                  <span>or</span>  
+                  <span>or</span>
                   <a class="btn btn-md btn-primary" href="login.html">ログイン</a>
                </div>
             </div>
          </div>
       </nav>
       <!-- End Navbar -->
-      
-	  <!-- Search Box -->
+
+    <!-- Search Box -->
       <section class="search-box">
-      
+
          <div class="container">
             <div class="row">
                <div class="main-search-box text-center">
@@ -150,7 +150,7 @@
                            <option value="Appliances"> ダイエット</option>
                            <option value="Appliances">その他:今後追加予定</option>
                            <!-- <option value="House" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> -
-                              House and Children - 
+                              House and Children -
                            </option>
                            <option value="Appliances"> ダイエット</option>
                            <option value="Inside"> Inside</option>
@@ -160,7 +160,7 @@
                            <option value="Telephony"> Telephony</option>
                            <option value="Image"> Image and sound</option>
                            <option value="Real" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> -
-                              Real Estate - 
+                              Real Estate -
                            </option>
                            <option value="Apartment"> Apartment</option>
                            <option value="Home"> Home</option>
@@ -179,7 +179,7 @@
                      <div class="col-xs-6 col-md-4 col-sm-4 search-input">
 
                      <input class="form-control input-lg search-form" type="text" name="station" placeholder="駅名" maxlength="80">
-                        
+
                      </div>
                      <div class="col-md-2 col-sm-2 search-input">
                         <button class="btn btn-primary btn-lg simple-btn btn-block" data-toggle="tooltip" data-placement="top" title="詳細画面へ">
@@ -272,8 +272,8 @@
             </div>
         </div>
     </div>
-      
-	  <!-- Featured Products -->
+
+    <!-- Featured Products -->
       <section class="featured-products">
          <div class="container">
             <div class="row">
@@ -295,7 +295,7 @@
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt=""> 
+                                 <img src="images/user.jpg" alt="">
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -327,7 +327,7 @@
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt=""> 
+                                 <img src="images/user.jpg" alt="">
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -358,7 +358,7 @@
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt=""> 
+                                 <img src="images/user.jpg" alt="">
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -388,7 +388,7 @@
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt=""> 
+                                 <img src="images/user.jpg" alt="">
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -417,7 +417,7 @@
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt=""> 
+                                 <img src="images/user.jpg" alt="">
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -446,7 +446,7 @@
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt=""> 
+                                 <img src="images/user.jpg" alt="">
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -475,7 +475,7 @@
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt=""> 
+                                 <img src="images/user.jpg" alt="">
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -506,7 +506,7 @@
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt=""> 
+                                 <img src="images/user.jpg" alt="">
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -551,12 +551,12 @@
                               <i class="fa fa-street-view" aria-hidden="true"></i>
                               <span>ヨガ</span>
                               <h3>YOGA</h3>
-                              
+
                            </div>
                         </div>
                      </a>
                      </div><!-- Links -->
-                    
+
                      <div class="col-md-3 col-xs-6">
                      <a href="categories.html" title="">
                         <div class="links">
@@ -565,7 +565,7 @@
                               <i class="fa fa-bolt"></i>
                               <span>ボディメイク</span>
                               <h3>Body make</h3>
-                             
+
                            </div>
                         </div><!-- Links -->
                         </a>
@@ -578,7 +578,7 @@
                               <i class="fa fa-unlink"></i>
                               <span>姿勢矯正</span>
                               <h3>Posture</h3>
-                              
+
                            </div>
                         </div><!-- Links -->
                         </a>
@@ -591,7 +591,7 @@
                               <i class="fa fa-universal-access" aria-hidden="true"></i>
                               <span>筋活</span>
                               <h3>MAKE MUSCLE</h3>
-                              
+
                            </div>
                         </div><!-- Links -->
                         </a>
@@ -603,10 +603,10 @@
       </div>
    </div>
 </section>
-      
 
-      
-	  <!-- App Store -->
+
+
+    <!-- App Store -->
       <section class="app-store-main">
          <div class="container">
             <div class="row">
@@ -630,7 +630,7 @@
                            <h4>Apple Store</h4>
                         </a>
                      </div>
-                     
+
                   </div>
                </div>
                <div class="hidden-xs col-sm-4 col-md-5 pull-right">
@@ -642,8 +642,8 @@
          </div>
       </section>
       <!-- End App Store -->
-      
-	  <!-- Footer -->
+
+    <!-- Footer -->
       <footer>
          <section class="footer-Content">
             <div class="container">
@@ -672,12 +672,12 @@
                            <li><a href="#"><span>95</span> テスト</a></li>
                            <li><a href="#"><span>85</span> テスト</a></li>
                            <li><a href="#"><span>50</span> テスト</a></li>
-                           
-                           
+
+
                         </ul>
                      </div>
                   </div>
-                  
+
                </div>
             </div>
          </section>
@@ -685,12 +685,12 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <div class="bottom-social-icons social-icon text-center">  
-                        <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+                     <div class="bottom-social-icons social-icon text-center">
+                        <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
                         <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                        
+
                         <a href="#" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
-                       
+
                      </div>
                      <div class="site-info text-center">
                         <p>&copy; Copyright 2017  All Rights Reserved<br> <!-- Made with <i class="fa fa-heart"></i> by <a target="_blank" href=""><strong>testtest</strong></a> --></p>
@@ -701,21 +701,21 @@
          </div>
       </footer>
       <!-- End Footer -->
-      
+
       <a href="signup.html" data-toggle="tooltip" data-placement="left" title="キャンペーン中" class="btn btn-danger btn-lg post-free-add-btn">
       事前会員登録<i class="fa fa-user-plus"></i></a>
 
-	  
-	  <!-- Back To Top -->
-	  <a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Back To Top -->
+    <a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
       <!-- End Back To Top -->
-	  
-	  <!-- Chat Popup -->
+
+    <!-- Chat Popup -->
      <div id="accordion">
          <div class="popup-box chat-popup">
            <div class="popup-head">
              <div class="popup-head-left pull-left">
-             <a href="https://goo.gl/forms/kbCQH4kSPnLxRvdf1"> 
+             <a href="https://goo.gl/forms/kbCQH4kSPnLxRvdf1">
                <!-- <a data-toggle="collapse" data-parent="#accordion" href="#popup"> -->
                <img src="images/user.jpg" alt="">トレーナーとして登録する
                <small>>>Click<<</small>
@@ -799,20 +799,18 @@
            </div>
          </div>
       </div>
-	  
-	  <!-- End Chat Popup -->
-      
-	  <!-- jQuery -->
+
+    <!-- End Chat Popup -->
+
+    <!-- jQuery -->
       <script src="js/jquery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
-      
-	  <!-- Custom js -->
+
+    <!-- Custom js -->
       <script src="js/custom.js"></script>
-      
-	  <!-- Bootstrap JavaScript -->
+
+    <!-- Bootstrap JavaScript -->
       <script src="js/bootstrap.min.js"></script>
-      
-	  <!-- Owl Carousel -->
       <script src="plugins/owl-carousel/owl.carousel.js"></script>
    </body>
 </html>
