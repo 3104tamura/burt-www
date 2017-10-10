@@ -1,96 +1,8 @@
-    <!-- Preloder -->
-    <div id="preloader"></div>
-    <!-- End Preloder -->
-
-    <!-- Navbar -->
-      <nav class="navbar top-navbar" role="navigation">
-         <div class="container">
-            <div class="navbar-header col-sm-2">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.png" ></a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav">
-                  <li><a href="index.html">Home</a></li>
-                  <li class="dropdown">
-                     <a class="dropdown-toggle" href="categories.html">カテゴリから選ぶ<b class="caret"></b></a>
-                     <!-- <ul class="dropdown-menu">
-                        <li>
-                           <a href="categories.html"><i class="fa fa-fw fa-angle-right"></i>ヨガ</a>
-                        </li>
-                        <li>
-                           <a href="category-grid.html"><i class="fa fa-fw fa-angle-right"></i>ボディメイク</a>
-                        </li>
-                        <li>
-                           <a href="single.html"><i class="fa fa-fw fa-angle-right"></i>姿勢矯正</a>
-                        </li>
-                        <li>
-                           <a href="single.html"><i class="fa fa-fw fa-angle-right"></i>美脚</a>
-                        </li>
-                        <li>
-                           <a href="single.html"><i class="fa fa-fw fa-angle-right"></i>ダイエット</a>
-                        </li>
-                     </ul> -->
-                  </li>
-                  <li><a href="pricing.html">料金</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li class="dropdown">
-                     <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Blog <b class="caret"></b></a>
-                     <ul class="dropdown-menu">
-                        <li>
-                           <a href="blog.html"><i class="fa fa-fw fa-angle-right"></i>トレーナーBlog</a>
-                        </li>
-                        <li>
-                           <a href="blog_details.html"><i class="fa fa-fw fa-angle-right"></i> Blog Details</a>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="dropdown">
-                     <!-- <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> Other Pages <b class="caret"></b></a> -->
-                     <ul class="dropdown-menu">
-                        <li>
-                           <a href="create_post.html"><i class="fa fa-fw fa-angle-right"></i> Post Your Ad</a>
-                        </li>
-                        <li>
-                           <a href="settings.html"><i class="fa fa-fw fa-angle-right"></i> Settings</a>
-                        </li>
-                        <li>
-                           <a href="close-account.html"><i class="fa fa-fw fa-angle-right"></i> Close account</a>
-                        </li>
-                        <li>
-                           <a href="my-ads.html"><i class="fa fa-fw fa-angle-right"></i> My Ads</a>
-                        </li>
-                        <li>
-                           <a href="favourite.html"><i class="fa fa-fw fa-angle-right"></i> Favourite Ads</a>
-                        </li>
-                        <li>
-                           <a href="privacy.html"><i class="fa fa-fw fa-angle-right"></i> Privacy Policy</a>
-                        </li>
-                        <li>
-                           <a href="404.html"><i class="fa fa-fw fa-angle-right"></i> 404</a>
-                        </li>
-                     </ul>
-                  </li>
-               </ul>
-               <div class="user-login pull-right">
-                  <a href="signup.html">新規登録</a>
-                  <span>or</span>
-                  <a class="btn btn-md btn-primary" href="login.html">ログイン</a>
-               </div>
-            </div>
-         </div>
-      </nav>
-      <!-- End Navbar -->
+<% # FIXME hrefとpreloaderについては保留 %>
+  <%= render partial: 'common/header' %>
 
     <!-- Search Box -->
       <section class="search-box">
-
          <div class="container">
             <div class="row">
                <div class="main-search-box text-center">
@@ -190,7 +102,9 @@
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-img-box mb30 text-center ">
                         <div class="service-img">
-                            <a href="personal-loan.html" class="imghover"><img src="images/banner03.jpg" alt="Borrow - Loan Company Website Template " class="img-responsive"></a>
+                          <a href="personal-loan.html" class="imghover">
+                            <%= image_tag 'banner03', class: 'img-responsive', alt: 'Borrow - Loan Company Website Template ' %>
+                          </a>
                         </div>
                         <div class="service-content bg-white pinside30">
                             <h2><a href="personal-loan.html" class="title">安心・安全の理由</a></h2>
@@ -201,7 +115,9 @@
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-img-box mb30 text-center ">
                         <div class="service-img">
-                            <a href="home-loan.html" class="imghover"><img src="images/banner02.jpg" alt="Borrow - Loan Company Website Template " class="img-responsive"></a>
+                          <a href="home-loan.html" class="imghover">
+                            <%= image_tag 'banner02', class: 'img-responsive', alt: 'Borrow - Loan Company Website Template ' %>
+                          </a>
                         </div>
                         <div class="service-content bg-white pinside30">
                             <h2><a href="home-loan.html" class="title">Brutとは？</a></h2>
@@ -212,7 +128,9 @@
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="service-img-box mb30 text-center ">
                         <div class="service-img">
-                            <a href="education-loan.html" class="imghover"><img src="images/banner04.jpg" alt="Borrow - Loan Company Website Template " class="img-responsive"></a>
+                          <a href="education-loan.html" class="imghover">
+                            <%= image_tag 'banner04', class: 'img-responsive', alt: 'Borrow - Loan Company Website Template' %>
+                          </a>
                         </div>
                         <div class="service-content bg-white pinside30">
                             <h2><a href="education-loan.html" class="title">使い方を見る</a></h2>
@@ -223,7 +141,9 @@
                 <div class="col-md-3 col-sm-6 col-xs-6 pc-none">
                     <div class="service-img-box mb30 text-center">
                         <div class="service-img">
-                            <a href="education-loan.html" class="imghover"><img src="images/banner04.jpg" alt="Borrow - Loan Company Website Template " class="img-responsive"></a>
+                          <a href="education-loan.html" class="imghover">
+                            <%= image_tag 'banner04', class: 'img-responsive', alt: 'Borrow - Loan Company Website Template' %>
+                          </a>
                         </div>
                         <div class="service-content bg-white pinside30">
                             <h2><a href="education-loan.html" class="title">トレーナーとして使う</a></h2>
@@ -252,12 +172,12 @@
                            </div> -->
                            <div class="item-img-grid">
                            <a href="single.html">
-                              <img alt="" src="images/top/ad01.png" class="img-responsive img-center">
+                              <%= image_tag 'top/ad01', class: 'img-responsive img-center' %>
                               </a>
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt="">
+                                   <%= image_tag 'user' %>
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -284,12 +204,12 @@
                            </div> -->
                            <div class="item-img-grid">
                            <a href="single.html">
-                              <img alt="" src="images/top/ad02.png" class="img-responsive img-center">
+                              <%= image_tag 'top/ad02', class: 'img-responsive img-center' %>
                               </a>
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt="">
+                                 <%= image_tag 'user' %>
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -315,12 +235,12 @@
                            </div> -->
                            <div class="item-img-grid">
                            <a href="single.html">
-                              <img alt="" src="images/top/ad01.png" class="img-responsive img-center">
+                              <%= image_tag 'top/ad01', class: 'img-responsive img-center' %>
                               </a>
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt="">
+                                 <%= image_tag 'user' %>
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -346,11 +266,11 @@
                               <a href="#">Pick up</a>
                            </div>
                            <div class="item-img-grid">
-                              <img alt="" src="images/top/03.png" class="img-responsive img-center">
+                              <%= image_tag 'top/03', class: 'img-responsive img-center' %>
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt="">
+                                 <%= image_tag 'user' %>
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -375,11 +295,11 @@
                               <a href="#">HOT</a>
                            </div> -->
                            <div class="item-img-grid">
-                              <img alt="" src="images/top/ad01.png" class="img-responsive img-center">
+                              <%= image_tag 'top/ad01', class: 'img-responsive img-center' %>
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt="">
+                                 <%= image_tag 'user' %>
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -404,11 +324,11 @@
                               <a href="#">HOT</a>
                            </div> -->
                            <div class="item-img-grid">
-                              <img alt="" src="images/top/ad02.png" class="img-responsive img-center">
+                              <%= image_tag 'top/ad02', class: 'img-responsive img-center' %>
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt="">
+                                 <%= image_tag 'user' %>
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -433,11 +353,12 @@
                               <a href="#">HOT</a>
                            </div> -->
                            <div class="item-img-grid">
-                              <img alt="" src="images/top/03.png" class="img-responsive img-center">
+                              <%= image_tag 'top/03', class: 'img-responsive img-center' %>
+
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt="">
+                                 <%= image_tag 'user' %>
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -463,12 +384,13 @@
                            </div> -->
                            <div class="item-img-grid">
                            <a href="single.html">
-                              <img alt="" src="images/top/ad01.png" class="img-responsive img-center">
+                              <%= image_tag 'top/ad01', class: 'img-responsive img-center' %>
+
                               </a>
                               <div class="item-title">
                               <div class="popup-head-left pull-left">
                                  <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <img src="images/user.jpg" alt="">
+                                 <%= image_tag 'user' %>
                                  </a>
                                </div><br><br>
                                  <a href="single.html">
@@ -580,14 +502,14 @@
                   <div class="row inner app-icons">
                      <div class="col-xs-6 col-md-4">
                         <a href="#" class="app-store">
-                           <img src="images/android.png" alt="Google play">
+                           <%= image_tag 'android', alt: 'Google play' %>
                            <span>download on</span>
                            <h4>Google Play</h4>
                         </a>
                      </div>
                      <div class="col-xs-6 col-md-4">
                         <a href="#" class="app-store">
-                           <img src="images/apple.png" alt="Apple store">
+                           <%= image_tag 'apple', alt: 'Apple store' %>
                            <span>download on</span>
                            <h4>Apple Store</h4>
                         </a>
@@ -597,7 +519,7 @@
                </div>
                <div class="hidden-xs col-sm-4 col-md-5 pull-right">
                   <div class="action-mock">
-                     <img src="images/app-mock.png" alt="download apps">
+                     <%= image_tag 'app-mock', alt: 'download apps' %>
                   </div>
                </div>
             </div>
@@ -679,7 +601,7 @@
              <div class="popup-head-left pull-left">
              <a href="https://goo.gl/forms/kbCQH4kSPnLxRvdf1">
                <!-- <a data-toggle="collapse" data-parent="#accordion" href="#popup"> -->
-               <img src="images/user.jpg" alt="">トレーナーとして登録する
+               <%= image_tag 'user' %> トレーナーとして登録する
                <small>>>Click<<</small>
                </a>
              </div>
@@ -709,7 +631,7 @@
                       <span class="direct-chat-name pull-left">Osahan</span>
                     </div>
                     <!-- /.direct-chat-info -->
-                    <img alt="message user image" src="images/user.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+                    <%= image_tag 'user', class: 'direct-chat-img', alt: 'message user image' %>
                     <div class="direct-chat-text">
                       Hey bro, how’s everything going ?
                     </div>
@@ -733,7 +655,7 @@
                       <span class="direct-chat-name pull-left">Osahan</span>
                     </div>
                     <!-- /.direct-chat-info -->
-                    <img alt="" src="images/user.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+                    <%= image_tag 'user', class: 'direct-chat-img' %>
                     <div class="direct-chat-text">
                       Hey bro, how’s everything going ?
                     </div>
@@ -741,7 +663,7 @@
                       <span class="direct-chat-timestamp pull-right">3.36 PM</span>
                     </div>
                     <div class="direct-chat-info clearfix">
-                      <img alt="" src="images/blog/user/a3.jpg" class="direct-chat-img big-round">
+                      <%= image_tag 'blog/user/a3.jpg', class: 'direct-chat-img big-round' %>
                       <span class="direct-chat-reply-name">Singh</span>
                     </div>
                     <!-- /.direct-chat-text -->
@@ -761,18 +683,3 @@
            </div>
          </div>
       </div>
-
-    <!-- End Chat Popup -->
-
-    <!-- jQuery -->
-      <script src="js/jquery.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
-
-    <!-- Custom js -->
-      <script src="js/custom.js"></script>
-
-    <!-- Bootstrap JavaScript -->
-      <script src="js/bootstrap.min.js"></script>
-
-    <!-- Owl Carousel -->
-      <script src="plugins/owl-carousel/owl.carousel.js"></script>
