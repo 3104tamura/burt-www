@@ -1,81 +1,83 @@
-<div class="container">
-  <div class="navbar-header col-sm-2">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="index.html">
-      <%= image_tag 'logo.png', alt: 'logo' %>
-    </a>
-  </div>
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li>
-        <%= link_to 'Home', root_path %>
-      </li>
-      <li class="dropdown">
-        <%= link_to  categories_path, class: 'dropdown-toggle' do %>
-          カテゴリから選ぶ<b class="caret"></b>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to '料金', nil %>
-      </li>
-      <li>
-        <%= link_to 'FAQ', nil %>
-      </li>
-      <li>
-        <%= link_to 'Contact Us', nil %>
-      </li>
-      <li class="dropdown">
-        <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Blog <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li>
-            <%= link_to nil do %>
-              <i class="fa fa-fw fa-angle-right"></i>トレーナーBlog
-            <% end %>
-          </li>
-          <li>
-            <%= link_to nil do %>
-              <i class="fa fa-fw fa-angle-right"></i> Blog Details
-            <% end %>
-          </li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <!-- <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> Other Pages <b class="caret"></b></a> -->
-        <% # FIXME: 本稼働させるようになったら %>
-        <ul class="dropdown-menu">
-          <li>
-            <a href="create_post.html"><i class="fa fa-fw fa-angle-right"></i> Post Your Ad</a>
-          </li>
-          <li>
-            <a href="settings.html"><i class="fa fa-fw fa-angle-right"></i> Settings</a>
-          </li>
-          <li>
-            <a href="close-account.html"><i class="fa fa-fw fa-angle-right"></i> Close account</a>
-          </li>
-          <li>
-            <a href="my-ads.html"><i class="fa fa-fw fa-angle-right"></i> My Ads</a>
-          </li>
-          <li>
-            <a href="favourite.html"><i class="fa fa-fw fa-angle-right"></i> Favourite Ads</a>
-          </li>
-          <li>
-            <a href="privacy.html"><i class="fa fa-fw fa-angle-right"></i> Privacy Policy</a>
-          </li>
-          <li>
-            <a href="404.html"><i class="fa fa-fw fa-angle-right"></i> 404</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <div class="user-login pull-right">
-      <a href="signup.html">新規登録</a>
-      <span>or</span>
-      <a class="btn btn-md btn-primary" href="login.html">ログイン</a>
+<nav class="navbar top-navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header col-sm-2">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <%= image_tag 'logo.png', alt: 'logo' %>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <%= link_to 'Home', root_path %>
+        </li>
+        <li class="dropdown">
+          <%= link_to  categories_path, class: 'dropdown-toggle' do %>
+            カテゴリから選ぶ<b class="caret"></b>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to '料金', nil %>
+        </li>
+        <li>
+          <%= link_to 'FAQ', nil %>
+        </li>
+        <li>
+          <%= link_to 'Contact Us', nil %>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Blog <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to nil do %>
+                <i class="fa fa-fw fa-angle-right"></i>トレーナーBlog
+              <% end %>
+            </li>
+            <li>
+              <%= link_to nil do %>
+                <i class="fa fa-fw fa-angle-right"></i> Blog Details
+              <% end %>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <!-- <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"> Other Pages <b class="caret"></b></a> -->
+          <% # FIXME: 本稼働させるようになったら %>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="create_post.html"><i class="fa fa-fw fa-angle-right"></i> Post Your Ad</a>
+            </li>
+            <li>
+              <a href="settings.html"><i class="fa fa-fw fa-angle-right"></i> Settings</a>
+            </li>
+            <li>
+              <a href="close-account.html"><i class="fa fa-fw fa-angle-right"></i> Close account</a>
+            </li>
+            <li>
+              <a href="my-ads.html"><i class="fa fa-fw fa-angle-right"></i> My Ads</a>
+            </li>
+            <li>
+              <a href="favourite.html"><i class="fa fa-fw fa-angle-right"></i> Favourite Ads</a>
+            </li>
+            <li>
+              <a href="privacy.html"><i class="fa fa-fw fa-angle-right"></i> Privacy Policy</a>
+            </li>
+            <li>
+              <a href="404.html"><i class="fa fa-fw fa-angle-right"></i> 404</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="user-login pull-right">
+        <a href="signup.html">新規登録</a>
+        <span>or</span>
+        <a class="btn btn-md btn-primary" href="login.html">ログイン</a>
+      </div>
     </div>
   </div>
-</div>
+</nav>
