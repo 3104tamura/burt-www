@@ -1,101 +1,16 @@
 <% # FIXME hrefとpreloaderについては保留 %>
   <%= render partial: 'common/header' %>
-
-    <!-- Search Box -->
-      <section class="search-box">
-         <div class="container">
-            <div class="row">
-               <div class="main-search-box text-center">
-                  <h1 class="intro-title">トップパーソナルトレーナーを好きな場所に呼ぼう!!</h1>
-                  <p class="sub-title">Brutとは好きな時間好きな場所でパーソナルトレーニング
-                  ができるサービスです。</p>
-                  <form action="categories.html" method="GET">
-                     <!-- <div class="col-md-4 col-sm-4 search-input">
-                        <input placeholder="What are you looking for...?" class="form-control input-lg search-form" type="text">
-                     </div> -->
-                     <div class="col-xs-6 col-md-4 col-sm-4 search-input">
-                        <select class="form-control input-lg search-form">
-                           <option selected="selected" value="">カテゴリー</option>
-                           <option value="Vehicles" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> ボディメイク</option>
-                           <option value="Cars">姿勢矯正</option>
-                           <option value="Motorcycles">骨盤矯正</option>
-                           <option value="Boats">ヨガ</option>
-                           <option value="Vehicles">O脚矯正</option>
-                           <option value="Appliances"> ダイエット</option>
-                           <option value="Appliances">その他:今後追加予定</option>
-                           <!-- <option value="House" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> -
-                              House and Children -
-                           </option>
-                           <option value="Appliances"> ダイエット</option>
-                           <option value="Inside"> Inside</option>
-                           <option value="Games"> Games and Clothing</option>
-                           <option value="Garden"> Garden</option>
-                           <option value="Multimedia" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - Multimedia - </option>
-                           <option value="Telephony"> Telephony</option>
-                           <option value="Image"> Image and sound</option>
-                           <option value="Real" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> -
-                              Real Estate -
-                           </option>
-                           <option value="Apartment"> Apartment</option>
-                           <option value="Home"> Home</option>
-                           <option value="Vacation"> Vacation Rentals</option>
-                           <option value="Grounds"> Grounds</option>
-                           <option value="Houseshares"> Houseshares</option>
-                           <option value="Other real estate"> Other real estate</option>
-                           <option value="Services" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - Services - </option>
-                           <option value="Jobs"> Jobs</option>
-                           <option value="Job application"> Job application</option>
-                           <option value="Services"> Services</option>
-                           <option value="dropoff" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - Extra - </option>
-                           <option value="Other"> Other</option> -->
-                        </select>
-                     </div>
-                     <div class="col-xs-6 col-md-4 col-sm-4 search-input">
-
-                     <input class="form-control input-lg search-form" type="text" name="station" placeholder="駅名" maxlength="80">
-
-                     </div>
-                     <div class="col-md-2 col-sm-2 search-input">
-                        <button class="btn btn-primary btn-lg simple-btn btn-block" data-toggle="tooltip" data-placement="top" title="詳細画面へ">
-                        <i class="fa fa-search"></i> Search
-                        </button>
-                     </div>
-                  </form>
-               </div>
-               <div class="top-categories margin-bottom-none">
-                  <h4>良く見られているカテゴリー</h4>
-                  <a href="categories.html">
-                  <i class="fa fa-book"></i>ヨガ
-                  </a>
-                  <a href="categories.html">
-                  <i class="fa fa-briefcase"></i>ボディメイク
-                  </a>
-                  <a href="categories.html">
-                  <i class="fa fa-mobile"></i>ウォーキング
-                  </a>
-                  <a href="categories.html">
-                  <i class="fa fa-laptop"></i>体感強化
-                  </a>
-                  <a href="categories.html">
-                  <i class="fa fa-building-o"></i>姿勢矯正
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- End Search Box -->
+  <%= render partial: 'common/search_box' %>
 
       <div class="section-space80" style="background: #f4f6f8;">
         <div class="container">
             <div class="row">
                 <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
                     <div class="mb60 text-center section-title">
-                        <!-- section title start-->
                         <h1>自分に合ったトレーナーを検索<br>パーソナルメニューからの予約もできる安心安全の<span>出張パーソナルトレーニング</span>サービス</h1>
                         <p>BRUT（ブリュット）は、お客様とパーソナルトレーナーのマッチングの場を提供するwebサービスです。
  BRUTが定める基準に達したハイレベルなパーソナルトレーナーのみが在籍しています。</p>
                     </div>
-                    <!-- /.section title start-->
                 </div>
             </div>
             <div class="row mt40">
@@ -488,103 +403,9 @@
    </div>
 </section>
 
+    <%= render partial: 'common/mobile_app' %>
+    <%= render partial: 'common/footer' %>
 
-
-    <!-- App Store -->
-      <section class="app-store-main">
-         <div class="container">
-            <div class="row">
-               <div class="col-xs-12 col-sm-8 col-md-7 pull-right">
-                  <header>
-                     <h2><strong>DOWNLOAD</strong> MOBILE APP</h2>
-                     <p>現在開発中の為リリースまでもうしばらくお待ちください。</p>
-                  </header>
-                  <div class="row inner app-icons">
-                     <div class="col-xs-6 col-md-4">
-                        <a href="#" class="app-store">
-                           <%= image_tag 'android', alt: 'Google play' %>
-                           <span>download on</span>
-                           <h4>Google Play</h4>
-                        </a>
-                     </div>
-                     <div class="col-xs-6 col-md-4">
-                        <a href="#" class="app-store">
-                           <%= image_tag 'apple', alt: 'Apple store' %>
-                           <span>download on</span>
-                           <h4>Apple Store</h4>
-                        </a>
-                     </div>
-
-                  </div>
-               </div>
-               <div class="hidden-xs col-sm-4 col-md-5 pull-right">
-                  <div class="action-mock">
-                     <%= image_tag 'app-mock', alt: 'download apps' %>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- End App Store -->
-
-    <!-- Footer -->
-      <footer>
-         <section class="footer-Content">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-7 col-sm-6 col-xs-12">
-                     <div class="footer-widget">
-                        <h3 class="block-title">About</h3>
-                        <div class="textwidget">
-                           <p>Brutとは好きな時間好きな場所でパーソナルトレーニング
-                  ができるサービスです。<br>自分に合ったトレーナーを検索パーソナルメニューからの予約もできる安心安全の<span>出張パーソナルトレーニング</span>サービスです。</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-5 col-sm-6 col-xs-12">
-                     <div class="footer-widget">
-                        <h3 class="block-title">Categories</h3>
-                        <ul class="menu">
-                           <li><a href="#"><span>562</span> ヨガ</a></li>
-                           <li><a href="#"><span>451</span> 体幹強化</a></li>
-                           <li><a href="#"><span>352</span> 美脚矯正</a></li>
-                           <li><a href="#"><span>312</span> ボディメイク</a></li>
-                           <li><a href="#"><span>262</span> テスト</a></li>
-                           <li><a href="#"><span>152</span> テスト</a></li>
-                           <li><a href="#"><span>102</span> テスト</a></li>
-                           <li><a href="#"><span>100</span> テスト</a></li>
-                           <li><a href="#"><span>95</span> テスト</a></li>
-                           <li><a href="#"><span>85</span> テスト</a></li>
-                           <li><a href="#"><span>50</span> テスト</a></li>
-
-
-                        </ul>
-                     </div>
-                  </div>
-
-               </div>
-            </div>
-         </section>
-         <div class="copyright">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="bottom-social-icons social-icon text-center">
-                        <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-
-                        <a href="#" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
-
-                     </div>
-                     <div class="site-info text-center">
-                        <p>&copy; Copyright 2017  All Rights Reserved<br> <!-- Made with <i class="fa fa-heart"></i> by <a target="_blank" href=""><strong>testtest</strong></a> --></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- End Footer -->
 
       <a href="signup.html" data-toggle="tooltip" data-placement="left" title="キャンペーン中" class="btn btn-danger btn-lg post-free-add-btn">
       事前会員登録<i class="fa fa-user-plus"></i></a>
