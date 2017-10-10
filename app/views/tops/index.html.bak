@@ -128,7 +128,6 @@
 
     <!-- Search Box -->
       <section class="search-box">
-
          <div class="container">
             <div class="row">
                <div class="main-search-box text-center">
@@ -799,8 +798,6 @@
            </div>
          </div>
       </div>
-
-    <!-- End Chat Popup -->
 
     <!-- jQuery -->
       <script src="js/jquery.js"></script>
