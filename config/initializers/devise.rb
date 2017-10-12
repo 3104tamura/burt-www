@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '640c17ffe1ed139a59587c58b1bad3301925b7f245b79a121c46615d5c468e08095f958672e01941976b8ecd2d9981f341e894ec71a9312a858a0047534d8abf'
+config.secret_key = '2968ccf627befebdab1842533c25ec8545dd2156d66685fafa6f3a8ed767081d05a08de16d23ffa77df2ffdaed7d7f669695f7e40da75bf1d29f20c8c66ebd19'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -251,7 +251,7 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, Rails.application.secrets.facebook.app_id, Rails.application.secrets.facebook.app_secret
+  config.omniauth :facebook, Rails.application.secrets.facebook['app_id'], Rails.application.secrets.facebook['app_secret']
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
