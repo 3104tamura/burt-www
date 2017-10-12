@@ -9,5 +9,13 @@ Rails.application.routes.draw do
     end
   end
 
+  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' },
+    controllers: { omniauth_callbacks: "users/omniauth_callbacks" }, skip: %w[session logout password regstration]
+
+  as :user do
+    get "sign_up" => "devise/regstrations#new"
+    post "sign_up" => "devise/regstrations#create"
+  end
+
   root 'tops#index'
 end

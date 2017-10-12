@@ -9,9 +9,8 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+// FIXME: jsの書き直しがありましたので、turbolinkを無効にしました。(turbolink特有の問題)
 //= require rails-ujs
-//= require turbolinks
 //= require jquery
 //= require bootstrap
 //= require owl-carousel/owl.carousel

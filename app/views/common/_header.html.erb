@@ -7,9 +7,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">
+      <%= link_to root_path, class: 'navbar-brand' do %>
         <%= image_tag 'logo.png', alt: 'logo' %>
-      </a>
+      <% end %>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -25,10 +25,10 @@
           <%= link_to '料金', nil %>
         </li>
         <li>
-          <%= link_to 'FAQ', nil %>
+          <%= link_to 'FAQ', questions_path %>
         </li>
         <li>
-          <%= link_to 'Contact Us', nil %>
+          <%= link_to 'Contact Us', new_contact_path %>
         </li>
         <li class="dropdown">
           <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Blog <b class="caret"></b></a>
@@ -74,7 +74,7 @@
         </li>
       </ul>
       <div class="user-login pull-right">
-        <a href="signup.html">新規登録</a>
+        <%= link_to '新規登録', new_user_registration_path %>
         <span>or</span>
         <a class="btn btn-md btn-primary" href="login.html">ログイン</a>
       </div>
