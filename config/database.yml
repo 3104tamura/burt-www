@@ -6,6 +6,7 @@
 #
 default: &default
   adapter: postgresql
+  encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
@@ -22,9 +23,9 @@ test:
   <<: *default
   user: root
   password: kazuyuki1104
-  database: burt_deveplopment
+  database: burt_test
 
 production:
   <<: *default
-  database: burt
-  password: <%= ENV['BURT_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  database: bur
