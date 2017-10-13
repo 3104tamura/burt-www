@@ -34,12 +34,12 @@
           <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Blog <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li>
-              <%= link_to nil do %>
+              <%= link_to blogs_path do %>
                 <i class="fa fa-fw fa-angle-right"></i>トレーナーBlog
               <% end %>
             </li>
             <li>
-              <%= link_to nil do %>
+              <%= link_to detail_blogs_path do %>
                 <i class="fa fa-fw fa-angle-right"></i> Blog Details
               <% end %>
             </li>
@@ -50,7 +50,9 @@
           <% # FIXME: 本稼働させるようになったら %>
           <ul class="dropdown-menu">
             <li>
-              <a href="create_post.html"><i class="fa fa-fw fa-angle-right"></i> Post Your Ad</a>
+              <%= link_to new_training_path do %>
+                <i class="fa fa-fw fa-angle-right"></i> Post Your Ad
+              <% end %>
             </li>
             <li>
               <a href="settings.html"><i class="fa fa-fw fa-angle-right"></i> Settings</a>
@@ -75,8 +77,6 @@
       </ul>
       <div class="user-login pull-right">
         <%= link_to '新規登録', new_user_registration_path %>
-        <span>or</span>
-        <a class="btn btn-md btn-primary" href="login.html">ログイン</a>
       </div>
     </div>
   </div>

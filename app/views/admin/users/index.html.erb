@@ -1,0 +1,28 @@
+<div class="col-sm-9 ml-sm-auto col-md-10 pt-3" style="margin-left: 15px;">
+  <h1>ユーザ一覧(登録数: <%= @users.size %>)</h1>
+
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Name</th>
+          <th>NickName</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.id %></td>
+            <td><%= user.email %></td>
+            <td><%= "#{user.last_name} #{user.first_name}" %></td>
+            <td><%= user.nickname %></td>
+            <td><%= user.gender == 0 ? '男性' : '女性' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
