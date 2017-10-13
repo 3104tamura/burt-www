@@ -1,107 +1,107 @@
 <%= render partial: 'common/header' %>
 <!-- Breadcumb -->
-  <section class="breadcumb_area">
-     <div class="container">
-        <div class="row">
-           <div class="col-xs-12 text-center">
-              <div class="breadcumb_section">
-                 <div class="page_title">
-                    <h3>事前会員登録</h3>
-                 </div>
-                 <div class="page_pagination">
-                    <ul>
-                       <li><a href="index.html">Home</a></li>
-                       <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                       <li>Sign Up</li>
-                    </ul>
-                 </div>
-              </div>
-           </div>
+<section class="breadcumb_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="breadcumb_section">
+          <div class="page_title">
+            <h3>事前会員登録</h3>
+          </div>
+          <div class="page_pagination">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li>Sign Up</li>
+            </ul>
+          </div>
         </div>
-     </div>
-  </section>
-  <!-- End Breadcumb -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Breadcumb -->
 
 <!-- Login -->
-  <section class="login">
-     <div class="container">
-        <div class="row">
-           <div class="col-sm-4 col-sm-offset-4">
-              <div class="login-panel widget">
-                 <div class="login-body">
-                   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-                     <%= devise_error_messages! %>
+<section class="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4">
+        <div class="login-panel widget">
+          <div class="login-body">
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= devise_error_messages! %>
 
-                     <div class="form-group">
-                       <%= f.label :email, class: 'control-label' do %>
-                         メールアドレス <span class="required">*</span>
-                       <% end %>
-                       <%= f.email_field :email, autofocus: true, placeholder: 'email', class: 'form-control' %>
-                     </div>
+              <div class="form-group">
+                <%= f.label :email, class: 'control-label' do %>
+                  メールアドレス <span class="required">*</span>
+                <% end %>
+                <%= f.email_field :email, autofocus: true, placeholder: 'email', class: 'form-control' %>
+              </div>
 
-                     <div class="form-group">
-                       <%= f.label :password, class: 'control-label' do %>
-                         パスワード <span class="required">*</span>
-                       <% end %>
-                       <%= f.password_field :password, autofocus: "off", class: 'form-control' %>
-                     </div>
+              <div class="form-group">
+                <%= f.label :password, class: 'control-label' do %>
+                  パスワード <span class="required">*</span>
+                <% end %>
+                <%= f.password_field :password, autofocus: "off", class: 'form-control' %>
+              </div>
 
-                     <div class="form-group">
-                       <%= f.label :password, class: 'control-label' do %>
-                         ニックネーム <span class="required">*</span>
-                       <% end %>
-                       <%= f.text_field :nickname, class: 'form-control', placeholder: 'BRUT太郎' %>
-                     </div>
+              <div class="form-group">
+                <%= f.label :password, class: 'control-label' do %>
+                  ニックネーム <span class="required">*</span>
+                <% end %>
+                <%= f.text_field :nickname, class: 'form-control', placeholder: 'BRUT太郎' %>
+              </div>
 
-                     <div class="form-group">
-                       <%= f.label :password, class: 'control-label' do %>
-                         性別 <span class="required">*</span>
-                       <% end %>
+              <div class="form-group">
+                <%= f.label :password, class: 'control-label' do %>
+                  性別 <span class="required">*</span>
+                <% end %>
 
-                       <%= label_tag class: 'chekcbox-inline' do %>
-                         <%= f.radio_button :gender, "0" %>男性
-                       <% end %>
+                <%= label_tag class: 'chekcbox-inline' do %>
+                  <%= f.radio_button :gender, "0" %>男性
+                <% end %>
 
-                       <%= label_tag class: 'chekcbox-inline' do %>
-                         <%= f.radio_button :gender, "1" %>女性
-                       <% end %>
-                     </div>
+                <%= label_tag class: 'chekcbox-inline' do %>
+                  <%= f.radio_button :gender, "1" %>女性
+                <% end %>
+              </div>
 
-                     <div class="form-group">
-                       <%= f.submit '事前会員登録', class: 'btn btn-block btn-lg btn-primary' %>
-                     </div>
-                     <a href="https://goo.gl/forms/1jjuGCdvIskA4d833">
-                       <div class="login-with-sites">
-                         <% # FIXME: buttonからlinkに変更したことによるデザイン崩れ %>
-                         <%= link_to user_facebook_omniauth_authorize_path, class: 'btn-facebook login-icons btn-lg btn-block' do %>
-                           <i class="fa fa-facebook"></i>　Facebookで登録
-                         <% end %>
-                       </div>
-                     </a>
-
-                     <div class="login-footer">
-                       <div class="checkbox checkbox-primary pull-left">
-                         <input id="checkbox2" type="checkbox" name="terms_of_service" value="1">
-                         <label for="checkbox2">
-                           利用規約に同意
-                         </label>
-                       </div>
-                     </div>
-                     <p class="text-center margin-bottom-none"><a href="login.html"><strong>アカウントをお持ちの方 </strong></a></p>
-                   <% end %>
+              <div class="form-group">
+                <%= f.submit '事前会員登録', class: 'btn btn-block btn-lg btn-primary' %>
+              </div>
+              <a href="https://goo.gl/forms/1jjuGCdvIskA4d833">
+                <div class="login-with-sites">
+                  <% # FIXME: buttonからlinkに変更したことによるデザイン崩れ %>
+                  <%= link_to user_facebook_omniauth_authorize_path, class: 'btn-facebook login-icons btn-lg btn-block' do %>
+                    <i class="fa fa-facebook"></i>　Facebookで登録
+                  <% end %>
                 </div>
-            </div>
+              </a>
+
+              <div class="login-footer">
+                <div class="checkbox checkbox-primary pull-left">
+                  <%= f.check_box :terms_of_service, id: 'checkbox2', value: "1" %>
+                  <label for="checkbox2">
+                    利用規約に同意
+                  </label>
+                </div>
+              </div>
+              <p class="text-center margin-bottom-none"><a href="login.html"><strong>アカウントをお持ちの方 </strong></a></p>
+            <% end %>
+          </div>
         </div>
+      </div>
     </div>
-     </div>
-  </section>
+  </div>
+</section>
 
 <%= render partial: 'common/footer' %>
 
-<!-- Post Ad -->
-<a href="create_post.html" data-toggle="tooltip" data-placement="left" title="Post Your Ad" class="btn btn-primary btn-lg post-free-add-btn"><i class="fa fa-pencil"></i></a>
-<!-- End Post Ad -->
+<%= link_to new_training_path, data: { toggle: 'tooltip', placement: 'left', }, title: 'Post Your Ad', class: 'btn btn-primary btn-lg post-free-add-btn' do %>
+  <i class="fa fa-pencil"></i>
+<% end %>
 
 <!-- Back To Top -->
 <a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
-  <!-- End Back To Top -->
+<!-- End Back To Top -->

@@ -1,1069 +1,1068 @@
-    <!-- Navbar -->
 <%= render partial: 'common/header' %>
 <%= render partial: 'common/search_box' %>
 
-    <!-- Categories Page Search-->
-      <section class="categories-page-search">
-         <div class="container">
-            <div class="row">
-               <div class="main-search-box text-center">
-                  <form action="#" method="GET">
-                     <div class="col-md-4 col-sm-4 search-input">
-                        <input placeholder="フリーテキスト" class="form-control input-lg search-form" type="text">
-                     </div>
-                     <div class="col-md-3 col-sm-3 search-input">
-                        <select class="form-control input-lg search-form">
-                           <option selected="selected" value="">カテゴリを選ぶ</option>
-                           <option value="Vehicles" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - ヨガ - </option>
-                           <option value="Cars">ホットヨガ</option>
-                           <option value="Motorcycles"> マタニティヨガ</option>
-                           <option value="Boats"> ハタヨガ</option>
-                           <option value="Vehicles"> ヨガヨガ</option>
-                           <option value="House" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> -
-                              ボディメイク -
-                           </option>
-                           <option value="Appliances"> 体感強化</option>
-                           <option value="Inside"> 腹筋</option>
-                           <option value="Games"> 上腕二頭筋</option>
+<!-- Categories Page Search-->
+<section class="categories-page-search">
+  <div class="container">
+    <div class="row">
+      <div class="main-search-box text-center">
+        <form action="#" method="GET">
+          <div class="col-md-4 col-sm-4 search-input">
+            <input placeholder="フリーテキスト" class="form-control input-lg search-form" type="text">
+          </div>
+          <div class="col-md-3 col-sm-3 search-input">
+            <select class="form-control input-lg search-form">
+              <option selected="selected" value="">カテゴリを選ぶ</option>
+              <option value="Vehicles" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> - ヨガ - </option>
+              <option value="Cars">ホットヨガ</option>
+              <option value="Motorcycles"> マタニティヨガ</option>
+              <option value="Boats"> ハタヨガ</option>
+              <option value="Vehicles"> ヨガヨガ</option>
+              <option value="House" style="background-color:#E9E9E9;font-weight:bold;" disabled="disabled"> -
+              ボディメイク -
+              </option>
+              <option value="Appliances"> 体感強化</option>
+              <option value="Inside"> 腹筋</option>
+              <option value="Games"> 上腕二頭筋</option>
 
 
-                           <option value="Other"> Other</option>
-                        </select>
-                     </div>
-                     <!-- <div class="col-md-3 col-sm-3 search-input">
-                        <select class="form-control input-lg search-form">
-                           <option selected="selected" value="">駅名</option>
-                           <option value="AL">テスト駅</option>
-                           <option value="AK">テスト駅</option>
-                           <option value="AZ">テスト駅</option>
+              <option value="Other"> Other</option>
+            </select>
+          </div>
+          <!-- <div class="col-md-3 col-sm-3 search-input">
+            <select class="form-control input-lg search-form">
+            <option selected="selected" value="">駅名</option>
+            <option value="AL">テスト駅</option>
+            <option value="AK">テスト駅</option>
+            <option value="AZ">テスト駅</option>
 
-                           <option value="Other-Locations">テスト駅</option>
-                        </select>
-                     </div> -->
-                     <div class="col-md-2 col-sm-2 search-input">
-                        <button class="btn btn-primary btn-lg simple-btn btn-block">
-                        <i class="fa fa-search"></i> Search
-                        </button>
-                     </div>
-                  </form>
-               </div>
-            </div>
-            <div class="row">
-               <!-- Categories Page Nav -->
-               <div class="all-categories-nav">
-                  <a href="#Restaurant">
-                     <i class="fa fa-glass shortcut-icon icon-blue"></i>
-                     <p>ヨガ <small>55 件</small></p>
-                  </a>
-                  <a href="#Real_Estate">
-                     <i class="fa fa-home shortcut-icon icon-green"></i>
-                     <p>姿勢矯正 <small>156 件</small></p>
-                  </a>
-                  <a href="#Cars">
-                     <i class="fa fa-car shortcut-icon icon-brown"></i>
-                     <p>ボディメイク <small>616 件</small></p>
-                  </a>
-                  <a href="#Shopping">
-                     <i class="fa fa-shopping-cart shortcut-icon icon-violet"></i>
-                     <p>筋活 <small>56件</small></p>
-                  </a>
-                  <a href="#Job">
-                     <i class="fa fa-briefcase shortcut-icon icon-dark-blue"></i>
-                     <p>ウォーキング <small>916件</small></p>
-                  </a>
-                  <a href="#Hotels">
-                     <i class="fa fa-building-o shortcut-icon icon-orange"></i>
-                     <p>体感強化<small>656件</small></p>
-                  </a>
-                 <!--  <a href="#Services">
-                     <i class="fa fa-star shortcut-icon icon-light-blue"></i>
-                     <p>ダイエット <small>156件</small></p>
-                  </a> -->
-                  <!-- <a href="#Pets">
-                     <i class="fa fa-paw shortcut-icon icon-light-green"></i>
-                     <p>Pets <small>9,156 Ads</small></p>
-                  </a> -->
-               </div>
-               <!-- End Categories Page Nav -->
-            </div>
-         </div>
-      </section>
-      <!-- End Categories Page Search-->
-
-    <!-- Categories List Page -->
-      <section class="categories-list main-categories-list">
-         <div class="container">
-            <div id="Restaurant" class="row">
-               <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="widget blue-widget">
-                     <div class="widget-header">
-                        <small>55件</small>
-                        <h1><i class="fa fa-glass shortcut-icon icon-blue"></i>ヨガ</h1>
-                     </div>
-                     <div class="widget-body">
-                        <ul class="trends">
-                           <li><a href="#">マタニティヨガ<span class="item-numbers">155</span></a></li>
-                           <li><a href="#">アンチエイジングヨガ<span class="item-numbers">80</span></a></li>
-                           <!-- <li><a href="#">Restaurants <span class="item-numbers">65</span></a></li>
-                           <li><a href="#">Pubs <span class="item-numbers">35</span></a></li>
-                           <li><a href="#">Food Truck <span class="item-numbers">12</span></a></li>
-                           <li><a href="#">Cafe <span class="item-numbers">155</span></a></li>
-                           <li><a href="#">Pubs <span class="item-numbers">35</span></a></li>
-                           <li><a href="#">Food Truck <span class="item-numbers">12</span></a></li>
-                           <li><a href="#">Show More <span class="item-numbers">7</span></a></li> -->
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-9 col-sm-9">
-                  <div class="single-categorie">
-                     <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
-                        <div class="item">
-                           <div class="item-ads-grid icon-blue">
-                              <div class="item-img-grid">
-                                 <%= image_tag asset_path('categories/menu/yogax_image_4.jpg'), class: 'img-responsive img-center' %>
-                                 <div class="item-title">
-                                 <div class="popup-head-left pull-left">
-                                 <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <%= image_tag asset_path('user.jpg') %>
-                                 </a>
-                               </div><br><br>
-                                    <a href="single.html">
-                                       <h4>ダイエット&ストレッチ</h4>
-                                    </a>
-                                    <h3>12,500円</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">ストレッチ</a>,<a href="#">ヨガ</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i>東京</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-blue">
-                              <div class="item-img-grid">
-                                 <%= image_tag asset_path('categories/menu/yogax_image_1.jpg'), class: 'img-responsive img-center' %>
-                                 <div class="item-title">
-                                 <div class="popup-head-left pull-left">
-                                 <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <%= image_tag asset_path('user.jpg') %>
-                                 </a>
-                               </div><br><br>
-                                    <a href="single.html">
-                                       <h4>メニューの名前</h4>
-                                    </a>
-                                    <h3>12,500円</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">ホット</a><a href="#">ヨガ</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i>東京</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-blue">
-                              <div class="item-img-grid">
-                                 <%= image_tag asset_path('categories/menu/yogax_image_2.jpg'), class: 'img-responsive img-center' %>
-                                 <div class="item-title">
-                                 <div class="popup-head-left pull-left">
-                                 <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <%= image_tag asset_path('user.jpg') %>
-                                 </a>
-                               </div><br><br>
-                                    <a href="single.html">
-                                       <h4>メニューの名前</h4>
-                                    </a>
-                                    <h3>12,500円</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">マタニティ</a> , <a href="#">ヨガ</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i>埼玉県</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-blue">
-                              <div class="item-img-grid">
-                                 <%= image_tag asset_path('categories/menu/yogax_image_1.jpg'), class: 'img-responsivei img-center' %>
-                                 <div class="item-title">
-                                 <div class="popup-head-left pull-left">
-                                 <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <%= image_tag asset_path('user.jpg') %>
-                                 </a>
-                               </div><br><br>
-                                    <a href="single.html">
-                                       <h4>メニューの名前</h4>
-                                    </a>
-                                    <h3>12,500円</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">ハタ</a> , <a href="#">ヨガ</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i>横浜</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-blue">
-                              <div class="item-img-grid">
-                                 <%= image_tag asset_path('categories/menu/yogax_image_1.jpg'), class: 'img-responsive img-center' %>
-                                 <div class="item-title">
-                                 <div class="popup-head-left pull-left">
-                                 <a data-toggle="collapse" data-parent="#accordion" href="#popup">
-                                 <%= image_tag asset_path('user.jpg') %>
-                                 </a>
-                               </div><br><br>
-                                    <a href="single.html">
-                                       <h4>メニューの名前</h4>
-                                    </a>
-                                    <h3>12,500円</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">Restaurant</a> , <a href="#">Cafe</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Buffalo </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-
-            </div>
-            <!-- <div id="Real_Estate" class="row">
-               <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="widget green-widget">
-                     <div class="widget-header">
-                        <small>98,156 Ads</small>
-                        <h1><i class="fa fa-home shortcut-icon icon-green"></i> Real Estate</h1>
-                     </div>
-                     <div class="widget-body">
-                        <ul class="trends">
-                           <li><a href="#">For Sale <span class="item-numbers">135</span></a></li>
-                           <li><a href="#">For Rent <span class="item-numbers">116</span></a></li>
-                           <li><a href="#">To Share <span class="item-numbers">65</span></a></li>
-                           <li><a href="#">Land & Estates <span class="item-numbers">47</span></a></li>
-                           <li><a href="#">Appartments <span class="item-numbers">23</span></a></li>
-                           <li><a href="#">For Sale <span class="item-numbers">135</span></a></li>
-                           <li><a href="#">Land & Estates <span class="item-numbers">47</span></a></li>
-                           <li><a href="#">Appartments <span class="item-numbers">23</span></a></li>
-                           <li><a href="#">Show More <span class="item-numbers">4</span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-9 col-sm-9">
-                  <div class="single-categorie">
-                     <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
-                        <div class="item">
-                           <div class="item-ads-grid icon-green">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/real_estate/1.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
-                                    <li class="item-cat"><i class="fa fa-home"></i> <a href="#">Real Estate</a> , <a href="#">For Rent</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Frederick </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-green">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/real_estate/2.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
-                                    <li class="item-cat"><i class="fa fa-home"></i> <a href="#">Real Estate</a> , <a href="#">For Rent</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Frederick </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-green">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/real_estate/3.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
-                                    <li class="item-cat"><i class="fa fa-home"></i> <a href="#">Real Estate</a> , <a href="#">For Rent</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Frederick </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-green">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/real_estate/4.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
-                                    <li class="item-cat"><i class="fa fa-home"></i> <a href="#">Real Estate</a> , <a href="#">For Rent</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Frederick </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <option value="Other-Locations">テスト駅</option>
+            </select>
             </div> -->
-            <!-- <div id="Cars" class="row">
-               <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="widget brown-widget">
-                     <div class="widget-header">
-                        <small>98,156 Ads</small>
-                        <h1><i class="fa fa-car shortcut-icon icon-brown"></i> Cars</h1>
-                     </div>
-                     <div class="widget-body">
-                        <ul class="trends">
-                           <li><a href="#">Car Parts <span class="item-numbers">98</span></a></li>
-                           <li><a href="#">Cars <span class="item-numbers">65</span></a></li>
-                           <li><a href="#">Motobikes <span class="item-numbers">55</span></a></li>
-                           <li><a href="#">Wanted <span class="item-numbers">28</span></a></li>
-                           <li><a href="#">Rentacar <span class="item-numbers">15</span></a></li>
-                           <li><a href="#">Car Parts <span class="item-numbers">98</span></a></li>
-                           <li><a href="#">Wanted <span class="item-numbers">28</span></a></li>
-                           <li><a href="#">Rentacar <span class="item-numbers">15</span></a></li>
-                           <li><a href="#">Show More <span class="item-numbers">12</span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-9 col-sm-9">
-                  <div class="single-categorie">
-                     <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
-                        <div class="item">
-                           <div class="item-ads-grid icon-brown">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/cars/1.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>It is a long established</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                    <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-brown">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/cars/2.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>It is a long established</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                    <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-brown">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/cars/3.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>It is a long established</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                    <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-brown">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/cars/4.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>It is a long established</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
-                                    <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div class="col-md-2 col-sm-2 search-input">
+              <button class="btn btn-primary btn-lg simple-btn btn-block">
+                <i class="fa fa-search"></i> Search
+              </button>
             </div>
-            <div id="Shopping" class="row">
-               <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="widget violet-widget">
-                     <div class="widget-header">
-                        <small>98,156 Ads</small>
-                        <h1><i class="fa fa-shopping-cart shortcut-icon icon-violet"></i> Shopping</h1>
-                     </div>
-                     <div class="widget-body">
-                        <ul class="trends">
-                           <li><a href="#">Food <span class="item-numbers">68</span></a></li>
-                           <li><a href="#">Wear <span class="item-numbers">44</span></a></li>
-                           <li><a href="#">Accessories <span class="item-numbers">23</span></a></li>
-                           <li><a href="#">IT & Sofware <span class="item-numbers">19</span></a></li>
-                           <li><a href="#">For Kids <span class="item-numbers">5</span></a></li>
-                           <li><a href="#">Food <span class="item-numbers">68</span></a></li>
-                           <li><a href="#">IT & Sofware <span class="item-numbers">19</span></a></li>
-                           <li><a href="#">For Kids <span class="item-numbers">5</span></a></li>
-                           <li><a href="#">Show More <span class="item-numbers">3</span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-9 col-sm-9">
-                  <div class="single-categorie">
-                     <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
-                        <div class="item">
-                           <div class="item-ads-grid icon-violet">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/shopping/1.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Passage of Lorem Ipsum </h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 11.45 PM</li>
-                                    <li class="item-cat"><i class="fa fa-shopping-cart"></i> <a href="#">Shopping</a> , <a href="#">Accessories</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> San Diego </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-violet">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/shopping/2.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Passage of Lorem Ipsum </h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 11.45 PM</li>
-                                    <li class="item-cat"><i class="fa fa-shopping-cart"></i> <a href="#">Shopping</a> , <a href="#">Accessories</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> San Diego </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-violet">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/shopping/3.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Passage of Lorem Ipsum </h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 11.45 PM</li>
-                                    <li class="item-cat"><i class="fa fa-shopping-cart"></i> <a href="#">Shopping</a> , <a href="#">Accessories</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> San Diego </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-violet">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/shopping/4.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Passage of Lorem Ipsum </h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 11.45 PM</li>
-                                    <li class="item-cat"><i class="fa fa-shopping-cart"></i> <a href="#">Shopping</a> , <a href="#">Accessories</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> San Diego </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div id="Job" class="row">
-               <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="widget dark-blue-widget">
-                     <div class="widget-header">
-                        <small>98,156 Ads</small>
-                        <h1><i class="fa fa-briefcase shortcut-icon icon-dark-blue"></i> Job</h1>
-                     </div>
-                     <div class="widget-body">
-                        <ul class="trends">
-                           <li><a href="#">Accountancy <span class="item-numbers">78</span></a></li>
-                           <li><a href="#">Banking <span class="item-numbers">45</span></a></li>
-                           <li><a href="#">Managerment <span class="item-numbers">30</span></a></li>
-                           <li><a href="#">Secretarial & PA <span class="item-numbers">28</span></a></li>
-                           <li><a href="#">Voluntary Work <span class="item-numbers">16</span></a></li>
-                           <li><a href="#">Accountancy <span class="item-numbers">78</span></a></li>
-                           <li><a href="#">Secretarial & PA <span class="item-numbers">28</span></a></li>
-                           <li><a href="#">Voluntary Work <span class="item-numbers">16</span></a></li>
-                           <li><a href="#">Show More <span class="item-numbers">9</span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-9 col-sm-9">
-                  <div class="single-categorie">
-                     <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
-                        <div class="item">
-                           <div class="item-ads-grid icon-dark-blue">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/job/1.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 09.45 PM</li>
-                                    <li class="item-cat"><i class="fa fa-briefcase"></i> <a href="#">Job</a> , <a href="#">Banking</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Juneau</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-dark-blue">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/job/2.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 09.45 PM</li>
-                                    <li class="item-cat"><i class="fa fa-briefcase"></i> <a href="#">Job</a> , <a href="#">Banking</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Juneau</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-dark-blue">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/job/3.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 09.45 PM</li>
-                                    <li class="item-cat"><i class="fa fa-briefcase"></i> <a href="#">Job</a> , <a href="#">Banking</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Juneau</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-dark-blue">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/job/4.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 09.45 PM</li>
-                                    <li class="item-cat"><i class="fa fa-briefcase"></i> <a href="#">Job</a> , <a href="#">Banking</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Juneau</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div id="Hotels" class="row">
-               <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="widget orange-widget">
-                     <div class="widget-header">
-                        <small>98,156 Ads</small>
-                        <h1><i class="fa fa-building-o shortcut-icon icon-orange"></i> Hotels</h1>
-                     </div>
-                     <div class="widget-body">
-                        <ul class="trends">
-                           <li><a href="#">Artists <span class="item-numbers">95</span></a></li>
-                           <li><a href="#">Events & Nightlife <span class="item-numbers">86</span></a></li>
-                           <li><a href="#">Hotel Stuff <span class="item-numbers">60</span></a></li>
-                           <li><a href="#">Classes <span class="item-numbers">30</span></a></li>
-                           <li><a href="#">Hostel <span class="item-numbers">22</span></a></li>
-                           <li><a href="#">Artists <span class="item-numbers">95</span></a></li>
-                           <li><a href="#">Classes <span class="item-numbers">30</span></a></li>
-                           <li><a href="#">Hostel <span class="item-numbers">22</span></a></li>
-                           <li><a href="#">Show More <span class="item-numbers">19</span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-9 col-sm-9">
-                  <div class="single-categorie">
-                     <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
-                        <div class="item">
-                           <div class="item-ads-grid icon-orange">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/hotels/1.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Passage of Lorem Ipsum</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
-                                    <li class="item-cat"><i class="fa fa-building-o"></i> <a href="#">Hotels</a> , <a href="#">Events & Nightlife</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fairbanks</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-orange">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/hotels/2.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Passage of Lorem Ipsum</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
-                                    <li class="item-cat"><i class="fa fa-building-o"></i> <a href="#">Hotels</a> , <a href="#">Events & Nightlife</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fairbanks</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-orange">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/hotels/3.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Passage of Lorem Ipsum</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
-                                    <li class="item-cat"><i class="fa fa-building-o"></i> <a href="#">Hotels</a> , <a href="#">Events & Nightlife</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fairbanks</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-orange">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/hotels/4.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Passage of Lorem Ipsum</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
-                                    <li class="item-cat"><i class="fa fa-building-o"></i> <a href="#">Hotels</a> , <a href="#">Events & Nightlife</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fairbanks</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div id="Services" class="row">
-               <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="widget light-blue-widget">
-                     <div class="widget-header">
-                        <small>98,156 Ads</small>
-                        <h1><i class="fa fa-star shortcut-icon icon-light-blue"></i> Services</h1>
-                     </div>
-                     <div class="widget-body">
-                        <ul class="trends">
-                           <li><a href="#">Computers <span class="item-numbers">55</span></a></li>
-                           <li><a href="#">Clothing <span class="item-numbers">35</span></a></li>
-                           <li><a href="#">Childcare <span class="item-numbers">31</span></a></li>
-                           <li><a href="#">Business <span class="item-numbers">29</span></a></li>
-                           <li><a href="#">Cleaning <span class="item-numbers">18</span></a></li>
-                           <li><a href="#">Computers <span class="item-numbers">55</span></a></li>
-                           <li><a href="#">Business <span class="item-numbers">29</span></a></li>
-                           <li><a href="#">Cleaning <span class="item-numbers">18</span></a></li>
-                           <li><a href="#">Show More <span class="item-numbers">8</span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-9 col-sm-9">
-                  <div class="single-categorie">
-                     <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
-                        <div class="item">
-                           <div class="item-ads-grid icon-light-blue">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/services/1.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>メニューの名前</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 12.09 PM</li>
-                                    <li class="item-cat"><i class="fa fa-star"></i> <a href="#">Services</a> , <a href="#">Computers</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fort Smith </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-light-blue">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/services/2.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>メニューの名前</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 12.09 PM</li>
-                                    <li class="item-cat"><i class="fa fa-star"></i> <a href="#">Services</a> , <a href="#">Computers</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fort Smith </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-light-blue">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/services/3.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>メニューの名前</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 12.09 PM</li>
-                                    <li class="item-cat"><i class="fa fa-star"></i> <a href="#">Services</a> , <a href="#">Computers</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fort Smith </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-light-blue">
-                              <div class="item-badge-grid featured-ads">
-                                 <a href="#">HOT</a>
-                              </div>
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/services/4.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>メニューの名前</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 12.09 PM</li>
-                                    <li class="item-cat"><i class="fa fa-star"></i> <a href="#">Services</a> , <a href="#">Computers</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fort Smith </a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
-            <!-- <div id="Pets" class="row">
-               <div class="col-lg-3 col-md-3 col-sm-3">
-                  <div class="widget light-green-widget margin-bottom-none">
-                     <div class="widget-header">
-                        <small>98,156 Ads</small>
-                        <h1><i class="fa fa-paw shortcut-icon icon-light-green"></i> Pets</h1>
-                     </div>
-                     <div class="widget-body">
-                        <ul class="trends">
-                           <li><a href="#">Cats <span class="item-numbers">66</span></a></li>
-                           <li><a href="#">Dogs <span class="item-numbers">54</span></a></li>
-                           <li><a href="#">Birds <span class="item-numbers">34</span></a></li>
-                           <li><a href="#">Wanted <span class="item-numbers">12</span></a></li>
-                           <li><a href="#">Pets for Sale <span class="item-numbers">6</span></a></li>
-                           <li><a href="#">Cats <span class="item-numbers">66</span></a></li>
-                           <li><a href="#">Wanted <span class="item-numbers">12</span></a></li>
-                           <li><a href="#">Pets for Sale <span class="item-numbers">6</span></a></li>
-                           <li><a href="#">Show More <span class="item-numbers">1</span></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-9 col-md-9 col-sm-9">
-                  <div class="single-categorie">
-                     <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
-                        <div class="item">
-                           <div class="item-ads-grid icon-light-green">
-                              <div class="item-badge-grid featured-ads">
-                                 <a href="#">HOT</a>
-                              </div>
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/pets/1.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-paw"></i> <a href="#">Pets</a> , <a href="#">Dogs</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-light-green">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/pets/2.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-paw"></i> <a href="#">Pets</a> , <a href="#">Dogs</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-light-green">
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/pets/3.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-paw"></i> <a href="#">Pets</a> , <a href="#">Dogs</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="item">
-                           <div class="item-ads-grid icon-light-green">
-                              <div class="item-badge-grid featured-ads">
-                                 <a href="#">HOT</a>
-                              </div>
-                              <div class="item-img-grid">
-                                 <img alt="" src="images/categories/pets/4.png" class="img-responsive img-center">
-                                 <div class="item-title">
-                                    <a href="single.html">
-                                       <h4>Lorem Ipsum is simply</h4>
-                                    </a>
-                                    <h3>$ 64.5000</h3>
-                                 </div>
-                              </div>
-                              <div class="item-meta">
-                                 <ul>
-                                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
-                                    <li class="item-cat"><i class="fa fa-paw"></i> <a href="#">Pets</a> , <a href="#">Dogs</a></li>
-                                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Manchester</a></li>
-                                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div> -->
-      </section>
-      <!-- End Categories List Page -->
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Categories Page Nav -->
+      <div class="all-categories-nav">
+        <a href="#Restaurant">
+          <i class="fa fa-glass shortcut-icon icon-blue"></i>
+          <p>ヨガ <small>55 件</small></p>
+        </a>
+        <a href="#Real_Estate">
+          <i class="fa fa-home shortcut-icon icon-green"></i>
+          <p>姿勢矯正 <small>156 件</small></p>
+        </a>
+        <a href="#Cars">
+          <i class="fa fa-car shortcut-icon icon-brown"></i>
+          <p>ボディメイク <small>616 件</small></p>
+        </a>
+        <a href="#Shopping">
+          <i class="fa fa-shopping-cart shortcut-icon icon-violet"></i>
+          <p>筋活 <small>56件</small></p>
+        </a>
+        <a href="#Job">
+          <i class="fa fa-briefcase shortcut-icon icon-dark-blue"></i>
+          <p>ウォーキング <small>916件</small></p>
+        </a>
+        <a href="#Hotels">
+          <i class="fa fa-building-o shortcut-icon icon-orange"></i>
+          <p>体感強化<small>656件</small></p>
+        </a>
+        <!--  <a href="#Services">
+          <i class="fa fa-star shortcut-icon icon-light-blue"></i>
+          <p>ダイエット <small>156件</small></p>
+          </a> -->
+          <!-- <a href="#Pets">
+            <i class="fa fa-paw shortcut-icon icon-light-green"></i>
+            <p>Pets <small>9,156 Ads</small></p>
+            </a> -->
+      </div>
+      <!-- End Categories Page Nav -->
+    </div>
+  </div>
+</section>
+<!-- End Categories Page Search-->
 
-    <%= render partial: 'common/mobile_app' %>
-    <%= render partial: 'common/footer' %>
+<!-- Categories List Page -->
+<section class="categories-list main-categories-list">
+  <div class="container">
+    <div id="Restaurant" class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="widget blue-widget">
+          <div class="widget-header">
+            <small>55件</small>
+            <h1><i class="fa fa-glass shortcut-icon icon-blue"></i>ヨガ</h1>
+          </div>
+          <div class="widget-body">
+            <ul class="trends">
+              <li><a href="#">マタニティヨガ<span class="item-numbers">155</span></a></li>
+              <li><a href="#">アンチエイジングヨガ<span class="item-numbers">80</span></a></li>
+              <!-- <li><a href="#">Restaurants <span class="item-numbers">65</span></a></li>
+                <li><a href="#">Pubs <span class="item-numbers">35</span></a></li>
+                <li><a href="#">Food Truck <span class="item-numbers">12</span></a></li>
+                <li><a href="#">Cafe <span class="item-numbers">155</span></a></li>
+                <li><a href="#">Pubs <span class="item-numbers">35</span></a></li>
+                <li><a href="#">Food Truck <span class="item-numbers">12</span></a></li>
+                <li><a href="#">Show More <span class="item-numbers">7</span></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9">
+        <div class="single-categorie">
+          <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
+            <div class="item">
+              <div class="item-ads-grid icon-blue">
+                <div class="item-img-grid">
+                  <%= image_tag asset_path('categories/menu/yogax_image_4.jpg'), class: 'img-responsive img-center' %>
+                  <div class="item-title">
+                    <div class="popup-head-left pull-left">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#popup">
+                        <%= image_tag asset_path('user.jpg') %>
+                      </a>
+                    </div><br><br>
+                    <a href="single.html">
+                      <h4>ダイエット&ストレッチ</h4>
+                    </a>
+                    <h3>12,500円</h3>
+                  </div>
+                </div>
+                <div class="item-meta">
+                  <ul>
+                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">ストレッチ</a>,<a href="#">ヨガ</a></li>
+                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i>東京</a></li>
+                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-ads-grid icon-blue">
+                <div class="item-img-grid">
+                  <%= image_tag asset_path('categories/menu/yogax_image_1.jpg'), class: 'img-responsive img-center' %>
+                  <div class="item-title">
+                    <div class="popup-head-left pull-left">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#popup">
+                        <%= image_tag asset_path('user.jpg') %>
+                      </a>
+                    </div><br><br>
+                    <a href="single.html">
+                      <h4>メニューの名前</h4>
+                    </a>
+                    <h3>12,500円</h3>
+                  </div>
+                </div>
+                <div class="item-meta">
+                  <ul>
+                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">ホット</a><a href="#">ヨガ</a></li>
+                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i>東京</a></li>
+                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-ads-grid icon-blue">
+                <div class="item-img-grid">
+                  <%= image_tag asset_path('categories/menu/yogax_image_2.jpg'), class: 'img-responsive img-center' %>
+                  <div class="item-title">
+                    <div class="popup-head-left pull-left">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#popup">
+                        <%= image_tag asset_path('user.jpg') %>
+                      </a>
+                    </div><br><br>
+                    <a href="single.html">
+                      <h4>メニューの名前</h4>
+                    </a>
+                    <h3>12,500円</h3>
+                  </div>
+                </div>
+                <div class="item-meta">
+                  <ul>
+                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">マタニティ</a> , <a href="#">ヨガ</a></li>
+                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i>埼玉県</a></li>
+                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-ads-grid icon-blue">
+                <div class="item-img-grid">
+                  <%= image_tag asset_path('categories/menu/yogax_image_1.jpg'), class: 'img-responsivei img-center' %>
+                  <div class="item-title">
+                    <div class="popup-head-left pull-left">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#popup">
+                        <%= image_tag asset_path('user.jpg') %>
+                      </a>
+                    </div><br><br>
+                    <a href="single.html">
+                      <h4>メニューの名前</h4>
+                    </a>
+                    <h3>12,500円</h3>
+                  </div>
+                </div>
+                <div class="item-meta">
+                  <ul>
+                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">ハタ</a> , <a href="#">ヨガ</a></li>
+                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i>横浜</a></li>
+                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-ads-grid icon-blue">
+                <div class="item-img-grid">
+                  <%= image_tag asset_path('categories/menu/yogax_image_1.jpg'), class: 'img-responsive img-center' %>
+                  <div class="item-title">
+                    <div class="popup-head-left pull-left">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#popup">
+                        <%= image_tag asset_path('user.jpg') %>
+                      </a>
+                    </div><br><br>
+                    <a href="single.html">
+                      <h4>メニューの名前</h4>
+                    </a>
+                    <h3>12,500円</h3>
+                  </div>
+                </div>
+                <div class="item-meta">
+                  <ul>
+                    <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+                    <li class="item-cat"><i class="fa fa-glass"></i> <a href="#">Restaurant</a> , <a href="#">Cafe</a></li>
+                    <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Buffalo </a></li>
+                    <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Post menu　トレーナーのカレントアカウントだけに表示 -->
-      <a href="create_post.html" data-toggle="tooltip" data-placement="left" title="Post Your Ad" class="btn btn-primary btn-lg post-free-add-btn"><i class="fa fa-pencil"></i></a>
-    <!-- End Post Ad -->
 
-    <!-- Back To Top -->
-    <a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+    </div>
+    <!-- <div id="Real_Estate" class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+      <div class="widget green-widget">
+      <div class="widget-header">
+      <small>98,156 Ads</small>
+      <h1><i class="fa fa-home shortcut-icon icon-green"></i> Real Estate</h1>
+      </div>
+      <div class="widget-body">
+      <ul class="trends">
+      <li><a href="#">For Sale <span class="item-numbers">135</span></a></li>
+      <li><a href="#">For Rent <span class="item-numbers">116</span></a></li>
+      <li><a href="#">To Share <span class="item-numbers">65</span></a></li>
+      <li><a href="#">Land & Estates <span class="item-numbers">47</span></a></li>
+      <li><a href="#">Appartments <span class="item-numbers">23</span></a></li>
+      <li><a href="#">For Sale <span class="item-numbers">135</span></a></li>
+      <li><a href="#">Land & Estates <span class="item-numbers">47</span></a></li>
+      <li><a href="#">Appartments <span class="item-numbers">23</span></a></li>
+      <li><a href="#">Show More <span class="item-numbers">4</span></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-9">
+      <div class="single-categorie">
+      <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
+      <div class="item">
+      <div class="item-ads-grid icon-green">
+      <div class="item-img-grid">
+      <img alt="" src="images/categories/real_estate/1.png" class="img-responsive img-center">
+      <div class="item-title">
+      <a href="single.html">
+      <h4>Lorem Ipsum is simply</h4>
+      </a>
+      <h3>$ 64.5000</h3>
+      </div>
+      </div>
+      <div class="item-meta">
+      <ul>
+      <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
+      <li class="item-cat"><i class="fa fa-home"></i> <a href="#">Real Estate</a> , <a href="#">For Rent</a></li>
+      <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Frederick </a></li>
+      <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="item-ads-grid icon-green">
+      <div class="item-img-grid">
+      <img alt="" src="images/categories/real_estate/2.png" class="img-responsive img-center">
+      <div class="item-title">
+      <a href="single.html">
+      <h4>Lorem Ipsum is simply</h4>
+      </a>
+      <h3>$ 64.5000</h3>
+      </div>
+      </div>
+      <div class="item-meta">
+      <ul>
+      <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
+      <li class="item-cat"><i class="fa fa-home"></i> <a href="#">Real Estate</a> , <a href="#">For Rent</a></li>
+      <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Frederick </a></li>
+      <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="item-ads-grid icon-green">
+      <div class="item-img-grid">
+      <img alt="" src="images/categories/real_estate/3.png" class="img-responsive img-center">
+      <div class="item-title">
+      <a href="single.html">
+      <h4>Lorem Ipsum is simply</h4>
+      </a>
+      <h3>$ 64.5000</h3>
+      </div>
+      </div>
+      <div class="item-meta">
+      <ul>
+      <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
+      <li class="item-cat"><i class="fa fa-home"></i> <a href="#">Real Estate</a> , <a href="#">For Rent</a></li>
+      <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Frederick </a></li>
+      <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      <div class="item">
+      <div class="item-ads-grid icon-green">
+      <div class="item-img-grid">
+      <img alt="" src="images/categories/real_estate/4.png" class="img-responsive img-center">
+      <div class="item-title">
+      <a href="single.html">
+      <h4>Lorem Ipsum is simply</h4>
+      </a>
+      <h3>$ 64.5000</h3>
+      </div>
+      </div>
+      <div class="item-meta">
+      <ul>
+      <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
+      <li class="item-cat"><i class="fa fa-home"></i> <a href="#">Real Estate</a> , <a href="#">For Rent</a></li>
+      <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Frederick </a></li>
+      <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div> -->
+      <!-- <div id="Cars" class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="widget brown-widget">
+        <div class="widget-header">
+        <small>98,156 Ads</small>
+        <h1><i class="fa fa-car shortcut-icon icon-brown"></i> Cars</h1>
+        </div>
+        <div class="widget-body">
+        <ul class="trends">
+        <li><a href="#">Car Parts <span class="item-numbers">98</span></a></li>
+        <li><a href="#">Cars <span class="item-numbers">65</span></a></li>
+        <li><a href="#">Motobikes <span class="item-numbers">55</span></a></li>
+        <li><a href="#">Wanted <span class="item-numbers">28</span></a></li>
+        <li><a href="#">Rentacar <span class="item-numbers">15</span></a></li>
+        <li><a href="#">Car Parts <span class="item-numbers">98</span></a></li>
+        <li><a href="#">Wanted <span class="item-numbers">28</span></a></li>
+        <li><a href="#">Rentacar <span class="item-numbers">15</span></a></li>
+        <li><a href="#">Show More <span class="item-numbers">12</span></a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+        <div class="single-categorie">
+        <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
+        <div class="item">
+        <div class="item-ads-grid icon-brown">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/cars/1.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>It is a long established</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+        <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-brown">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/cars/2.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>It is a long established</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+        <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-brown">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/cars/3.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>It is a long established</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+        <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-brown">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/cars/4.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>It is a long established</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 03.15 AM</li>
+        <li class="item-cat"><i class="fa fa-car"></i> <a href="#">Cars</a> , <a href="#">Car Parts</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Augusta </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="Shopping" class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="widget violet-widget">
+        <div class="widget-header">
+        <small>98,156 Ads</small>
+        <h1><i class="fa fa-shopping-cart shortcut-icon icon-violet"></i> Shopping</h1>
+        </div>
+        <div class="widget-body">
+        <ul class="trends">
+        <li><a href="#">Food <span class="item-numbers">68</span></a></li>
+        <li><a href="#">Wear <span class="item-numbers">44</span></a></li>
+        <li><a href="#">Accessories <span class="item-numbers">23</span></a></li>
+        <li><a href="#">IT & Sofware <span class="item-numbers">19</span></a></li>
+        <li><a href="#">For Kids <span class="item-numbers">5</span></a></li>
+        <li><a href="#">Food <span class="item-numbers">68</span></a></li>
+        <li><a href="#">IT & Sofware <span class="item-numbers">19</span></a></li>
+        <li><a href="#">For Kids <span class="item-numbers">5</span></a></li>
+        <li><a href="#">Show More <span class="item-numbers">3</span></a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+        <div class="single-categorie">
+        <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
+        <div class="item">
+        <div class="item-ads-grid icon-violet">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/shopping/1.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Passage of Lorem Ipsum </h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 11.45 PM</li>
+        <li class="item-cat"><i class="fa fa-shopping-cart"></i> <a href="#">Shopping</a> , <a href="#">Accessories</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> San Diego </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-violet">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/shopping/2.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Passage of Lorem Ipsum </h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 11.45 PM</li>
+        <li class="item-cat"><i class="fa fa-shopping-cart"></i> <a href="#">Shopping</a> , <a href="#">Accessories</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> San Diego </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-violet">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/shopping/3.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Passage of Lorem Ipsum </h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 11.45 PM</li>
+        <li class="item-cat"><i class="fa fa-shopping-cart"></i> <a href="#">Shopping</a> , <a href="#">Accessories</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> San Diego </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-violet">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/shopping/4.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Passage of Lorem Ipsum </h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 11.45 PM</li>
+        <li class="item-cat"><i class="fa fa-shopping-cart"></i> <a href="#">Shopping</a> , <a href="#">Accessories</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> San Diego </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="Job" class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="widget dark-blue-widget">
+        <div class="widget-header">
+        <small>98,156 Ads</small>
+        <h1><i class="fa fa-briefcase shortcut-icon icon-dark-blue"></i> Job</h1>
+        </div>
+        <div class="widget-body">
+        <ul class="trends">
+        <li><a href="#">Accountancy <span class="item-numbers">78</span></a></li>
+        <li><a href="#">Banking <span class="item-numbers">45</span></a></li>
+        <li><a href="#">Managerment <span class="item-numbers">30</span></a></li>
+        <li><a href="#">Secretarial & PA <span class="item-numbers">28</span></a></li>
+        <li><a href="#">Voluntary Work <span class="item-numbers">16</span></a></li>
+        <li><a href="#">Accountancy <span class="item-numbers">78</span></a></li>
+        <li><a href="#">Secretarial & PA <span class="item-numbers">28</span></a></li>
+        <li><a href="#">Voluntary Work <span class="item-numbers">16</span></a></li>
+        <li><a href="#">Show More <span class="item-numbers">9</span></a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+        <div class="single-categorie">
+        <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
+        <div class="item">
+        <div class="item-ads-grid icon-dark-blue">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/job/1.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Lorem Ipsum is simply</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 09.45 PM</li>
+        <li class="item-cat"><i class="fa fa-briefcase"></i> <a href="#">Job</a> , <a href="#">Banking</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Juneau</a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-dark-blue">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/job/2.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Lorem Ipsum is simply</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 09.45 PM</li>
+        <li class="item-cat"><i class="fa fa-briefcase"></i> <a href="#">Job</a> , <a href="#">Banking</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Juneau</a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-dark-blue">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/job/3.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Lorem Ipsum is simply</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 09.45 PM</li>
+        <li class="item-cat"><i class="fa fa-briefcase"></i> <a href="#">Job</a> , <a href="#">Banking</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Juneau</a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-dark-blue">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/job/4.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Lorem Ipsum is simply</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 09.45 PM</li>
+        <li class="item-cat"><i class="fa fa-briefcase"></i> <a href="#">Job</a> , <a href="#">Banking</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Juneau</a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="Hotels" class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="widget orange-widget">
+        <div class="widget-header">
+        <small>98,156 Ads</small>
+        <h1><i class="fa fa-building-o shortcut-icon icon-orange"></i> Hotels</h1>
+        </div>
+        <div class="widget-body">
+        <ul class="trends">
+        <li><a href="#">Artists <span class="item-numbers">95</span></a></li>
+        <li><a href="#">Events & Nightlife <span class="item-numbers">86</span></a></li>
+        <li><a href="#">Hotel Stuff <span class="item-numbers">60</span></a></li>
+        <li><a href="#">Classes <span class="item-numbers">30</span></a></li>
+        <li><a href="#">Hostel <span class="item-numbers">22</span></a></li>
+        <li><a href="#">Artists <span class="item-numbers">95</span></a></li>
+        <li><a href="#">Classes <span class="item-numbers">30</span></a></li>
+        <li><a href="#">Hostel <span class="item-numbers">22</span></a></li>
+        <li><a href="#">Show More <span class="item-numbers">19</span></a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+        <div class="single-categorie">
+        <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
+        <div class="item">
+        <div class="item-ads-grid icon-orange">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/hotels/1.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Passage of Lorem Ipsum</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
+        <li class="item-cat"><i class="fa fa-building-o"></i> <a href="#">Hotels</a> , <a href="#">Events & Nightlife</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fairbanks</a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-orange">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/hotels/2.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Passage of Lorem Ipsum</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
+        <li class="item-cat"><i class="fa fa-building-o"></i> <a href="#">Hotels</a> , <a href="#">Events & Nightlife</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fairbanks</a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-orange">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/hotels/3.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Passage of Lorem Ipsum</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
+        <li class="item-cat"><i class="fa fa-building-o"></i> <a href="#">Hotels</a> , <a href="#">Events & Nightlife</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fairbanks</a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-orange">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/hotels/4.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>Passage of Lorem Ipsum</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 02.05 AM</li>
+        <li class="item-cat"><i class="fa fa-building-o"></i> <a href="#">Hotels</a> , <a href="#">Events & Nightlife</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fairbanks</a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="Services" class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="widget light-blue-widget">
+        <div class="widget-header">
+        <small>98,156 Ads</small>
+        <h1><i class="fa fa-star shortcut-icon icon-light-blue"></i> Services</h1>
+        </div>
+        <div class="widget-body">
+        <ul class="trends">
+        <li><a href="#">Computers <span class="item-numbers">55</span></a></li>
+        <li><a href="#">Clothing <span class="item-numbers">35</span></a></li>
+        <li><a href="#">Childcare <span class="item-numbers">31</span></a></li>
+        <li><a href="#">Business <span class="item-numbers">29</span></a></li>
+        <li><a href="#">Cleaning <span class="item-numbers">18</span></a></li>
+        <li><a href="#">Computers <span class="item-numbers">55</span></a></li>
+        <li><a href="#">Business <span class="item-numbers">29</span></a></li>
+        <li><a href="#">Cleaning <span class="item-numbers">18</span></a></li>
+        <li><a href="#">Show More <span class="item-numbers">8</span></a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+        <div class="single-categorie">
+        <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
+        <div class="item">
+        <div class="item-ads-grid icon-light-blue">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/services/1.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>メニューの名前</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 12.09 PM</li>
+        <li class="item-cat"><i class="fa fa-star"></i> <a href="#">Services</a> , <a href="#">Computers</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fort Smith </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-light-blue">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/services/2.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>メニューの名前</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 12.09 PM</li>
+        <li class="item-cat"><i class="fa fa-star"></i> <a href="#">Services</a> , <a href="#">Computers</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fort Smith </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-light-blue">
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/services/3.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>メニューの名前</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 12.09 PM</li>
+        <li class="item-cat"><i class="fa fa-star"></i> <a href="#">Services</a> , <a href="#">Computers</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fort Smith </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="item">
+        <div class="item-ads-grid icon-light-blue">
+        <div class="item-badge-grid featured-ads">
+        <a href="#">HOT</a>
+        </div>
+        <div class="item-img-grid">
+        <img alt="" src="images/categories/services/4.png" class="img-responsive img-center">
+        <div class="item-title">
+        <a href="single.html">
+        <h4>メニューの名前</h4>
+        </a>
+        <h3>$ 64.5000</h3>
+        </div>
+        </div>
+        <div class="item-meta">
+        <ul>
+        <li class="item-date"><i class="fa fa-clock-o"></i> Today 12.09 PM</li>
+        <li class="item-cat"><i class="fa fa-star"></i> <a href="#">Services</a> , <a href="#">Computers</a></li>
+        <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Fort Smith </a></li>
+        <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div> -->
+        <!-- <div id="Pets" class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3">
+          <div class="widget light-green-widget margin-bottom-none">
+          <div class="widget-header">
+          <small>98,156 Ads</small>
+          <h1><i class="fa fa-paw shortcut-icon icon-light-green"></i> Pets</h1>
+          </div>
+          <div class="widget-body">
+          <ul class="trends">
+          <li><a href="#">Cats <span class="item-numbers">66</span></a></li>
+          <li><a href="#">Dogs <span class="item-numbers">54</span></a></li>
+          <li><a href="#">Birds <span class="item-numbers">34</span></a></li>
+          <li><a href="#">Wanted <span class="item-numbers">12</span></a></li>
+          <li><a href="#">Pets for Sale <span class="item-numbers">6</span></a></li>
+          <li><a href="#">Cats <span class="item-numbers">66</span></a></li>
+          <li><a href="#">Wanted <span class="item-numbers">12</span></a></li>
+          <li><a href="#">Pets for Sale <span class="item-numbers">6</span></a></li>
+          <li><a href="#">Show More <span class="item-numbers">1</span></a></li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-9">
+          <div class="single-categorie">
+          <div id="owl-carousel-featured" class="owl-carousel categories-list-page">
+          <div class="item">
+          <div class="item-ads-grid icon-light-green">
+          <div class="item-badge-grid featured-ads">
+          <a href="#">HOT</a>
+          </div>
+          <div class="item-img-grid">
+          <img alt="" src="images/categories/pets/1.png" class="img-responsive img-center">
+          <div class="item-title">
+          <a href="single.html">
+          <h4>Lorem Ipsum is simply</h4>
+          </a>
+          <h3>$ 64.5000</h3>
+          </div>
+          </div>
+          <div class="item-meta">
+          <ul>
+          <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+          <li class="item-cat"><i class="fa fa-paw"></i> <a href="#">Pets</a> , <a href="#">Dogs</a></li>
+          <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Manchester</a></li>
+          <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          <div class="item">
+          <div class="item-ads-grid icon-light-green">
+          <div class="item-img-grid">
+          <img alt="" src="images/categories/pets/2.png" class="img-responsive img-center">
+          <div class="item-title">
+          <a href="single.html">
+          <h4>Lorem Ipsum is simply</h4>
+          </a>
+          <h3>$ 64.5000</h3>
+          </div>
+          </div>
+          <div class="item-meta">
+          <ul>
+          <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+          <li class="item-cat"><i class="fa fa-paw"></i> <a href="#">Pets</a> , <a href="#">Dogs</a></li>
+          <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Manchester</a></li>
+          <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          <div class="item">
+          <div class="item-ads-grid icon-light-green">
+          <div class="item-img-grid">
+          <img alt="" src="images/categories/pets/3.png" class="img-responsive img-center">
+          <div class="item-title">
+          <a href="single.html">
+          <h4>Lorem Ipsum is simply</h4>
+          </a>
+          <h3>$ 64.5000</h3>
+          </div>
+          </div>
+          <div class="item-meta">
+          <ul>
+          <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+          <li class="item-cat"><i class="fa fa-paw"></i> <a href="#">Pets</a> , <a href="#">Dogs</a></li>
+          <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Manchester</a></li>
+          <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          <div class="item">
+          <div class="item-ads-grid icon-light-green">
+          <div class="item-badge-grid featured-ads">
+          <a href="#">HOT</a>
+          </div>
+          <div class="item-img-grid">
+          <img alt="" src="images/categories/pets/4.png" class="img-responsive img-center">
+          <div class="item-title">
+          <a href="single.html">
+          <h4>Lorem Ipsum is simply</h4>
+          </a>
+          <h3>$ 64.5000</h3>
+          </div>
+          </div>
+          <div class="item-meta">
+          <ul>
+          <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 AM</li>
+          <li class="item-cat"><i class="fa fa-paw"></i> <a href="#">Pets</a> , <a href="#">Dogs</a></li>
+          <li class="item-location"><a href="#"><i class="fa fa-map-marker"></i> Manchester</a></li>
+          <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div> -->
+</section>
+<!-- End Categories List Page -->
+
+<%= render partial: 'common/mobile_app' %>
+<%= render partial: 'common/footer' %>
+
+<%= link_to new_training_path, data: { toggle: 'tooltip', placement: 'left', }, title: 'Post Your Ad', class: 'btn btn-primary btn-lg post-free-add-btn' do %>
+  <i class="fa fa-pencil"></i>
+<% end %>
+
+<!-- Back To Top -->
+<a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
