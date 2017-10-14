@@ -1,0 +1,154 @@
+<%= render partial: 'common/header' %>
+
+<!-- Breadcumb -->
+<section class="breadcumb_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="breadcumb_section">
+          <div class="page_title">
+            <h3>トレーニングメニュー作成</h3>
+          </div>
+          <div class="page_pagination">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li>トレーニングメニュー作成</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Breadcumb -->
+
+<!-- Create Post -->
+<section class="create-post">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="login-panel widget margin-bottom-none">
+          <div class="login-body">
+            <form>
+              <div class="form-group">
+                <label class="control-label">トレーニングタイトル <span class="required">*</span></label>
+                <input type="text" placeholder="「産後に効くマタニティヨガ」など" required="required" value="" class="form-control border-form">
+              </div>
+              <div class="form-group">
+                <label class="control-label">メインカテゴリ <span class="required">*</span></label>
+                <select class="form-control border-form">
+                  <option selected="">カテゴリを選ぶ</option>
+                  <option>ヨガ</option>
+                  <option>ボディメイク</option>
+                  <option>姿勢矯正</option>
+                  <option>筋活</option>
+                  <option>テスト</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <label class="col-sm-3 control-label">サブカテゴリ <span class="required">*</span></label>
+                  <div class="col-sm-9">
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio1" value="option1" name="radioInline" >
+                      <label for="inlineRadio1"> ストレッチ </label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio2" value="option1" name="radioInline">
+                      <label for="inlineRadio2"> マタニティ </label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio3" value="option1" name="radioInline" >
+                      <label for="inlineRadio3"> 筋トレ </label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio4" value="option1" name="radioInline">
+                      <label for="inlineRadio4">筋活</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio5" value="option1" name="radioInline" >
+                      <label for="inlineRadio5"> テスト</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio6" value="option1" name="radioInline">
+                      <label for="inlineRadio6"> テスト</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio7" value="option1" name="radioInline" >
+                      <label for="inlineRadio7"> テスト</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio8" value="option1" name="radioInline">
+                      <label for="inlineRadio8"> テスト</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">価格設定 <span class="required">*</span>上限12,000円</label>
+                <div class="input-group">
+                  <span class="input-group-addon">¥</span>
+                  <input type="text" placeholder="現在シルバーランクの為上限値が決まっております。" required="required" value="" class="form-control border-form">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">トレーニングPhotos</label>
+                <input type="file" class="filestyle">
+                <span class="help-block"></span>
+                <input type="file" class="filestyle">
+                <span class="help-block"></span>
+                <input type="file" class="filestyle">
+                <span class="help-block"></span>
+                <input type="file" class="filestyle">
+                <span class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <label class="control-label">対応可能な範囲<span class="required">*</span></label>
+                <select class="form-control border-form">
+                  <option selected="">選択してください。</option>
+                  <option>東京</option>
+                  <option>東京23区外</option>
+                  <option>山手線圏内</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label">トレ-ニングの詳細 <span class="required">*</span></label>
+                <textarea placeholder="トレーニングの内容について詳しく書くとユーザーにもわかりやくなり注文が入りやすくなります。" class="form-control border-form"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="control-label">事前準備物 <span class="required">*</span></label>
+                <input type="text" placeholder="事前に準備しておいて欲しいものを記入ください。" required="required" value="" class="form-control border-form">
+              </div>
+              <!-- <div class="form-group">
+                <label class="control-label">Your email <span class="required">*</span></label>
+                <input type="text" placeholder="e.g. jon@gmail.com" required="required" value="" class="form-control border-form">
+                </div>
+                <div class="form-group">
+                <label class="control-label">Phone number <span class="required">*</span></label>
+                <div class="input-group">
+                <span class="input-group-addon">+44</span>
+                <input type="text" placeholder="e.g. 123456789" required="required" value="" class="form-control border-form">
+                </div>
+                </div> -->
+                <div class="form-group text-right margin-bottom-none">
+                  <button type="submit" class="col-xs-12 btn btn-success"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> 送信 </button>
+                  <!-- <button type="submit" class="btn btn-danger"><i class="fa fa-close"></i> Cancel</button> -->
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Create Post -->
+<%= render partial: 'common/footer' %>
+
+<%= link_to new_training_path, data: { toggle: 'tooltip', placement: 'left', }, title: 'Post Your Ad', class: 'btn btn-primary btn-lg post-free-add-btn' do %>
+  <i class="fa fa-pencil"></i>
+<% end %>
+
+<!-- Back To Top -->
+<a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+<!-- End Back To Top -->

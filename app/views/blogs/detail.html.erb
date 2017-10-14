@@ -1,0 +1,101 @@
+<%= render partial: 'common/header' %>
+
+<!-- Breadcumb -->
+<section class="breadcumb_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="breadcumb_section">
+          <div class="page_title">
+            <h3>Blog Details</h3>
+          </div>
+          <div class="page_pagination">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li>Blog Details</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Breadcumb -->
+
+<!-- Blog Details -->
+<section class="blog-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="panel blog-article-box">
+          <div class="panel-heading">
+            <h4>ボディメイク＆ダイエットの基礎知識 </h4>
+            <small>テストテストテストテストテストテストテストテスト</small>
+            <div class="text-muted small">
+              Created by: <span class="font-bold">Mike Smith</span>
+              21.03.2017, 06:45 pm
+            </div>
+          </div>
+          <div class="panel-image">
+            <%= image_tag 'http://ttdemo2.wpengine.com/yogax/wp-content/uploads/sites/4/2017/01/yogax_slider_1.jpg' %>
+          </div>
+          <div class="panel-body">
+            <p>
+            多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。
+            エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで... <br>
+            <br> くびれを作るためには毎日の努力の積み重ねが大事。日ごろから楽ちんな洋服を着ないようにしたり、腹筋に力を入れて生活したり、時間があるときにはエクササイズするなど、コツコツと心がけることが美しいくびれを作ることにつながるはず。気持ちがゆるんでいるとウエストまわりもゆるんでくるということですね。薄着の季節を乗り切るために、あなたも何かはじめてみませんか？
+            </p>
+            <br>
+            <blockquote class="pull-left" style="max-width: 250px">
+              <p>毎日の努力の積み重ねが大事</p>
+            </blockquote>
+            <p>
+            くびれを作るためには毎日の努力の積み重ねが大事。日ごろから楽ちんな洋服を着ないようにしたり、腹筋に力を入れて生活したり、時間があるときにはエクササイズするなど、コツコツと心がけることが美しいくびれを作ることにつながるはず。気持ちがゆるんでいるとウエストまわりもゆるんでくるということですね。薄着の季節を乗り切るために、あなたも何かはじめてみませんか？
+            </p>
+            <br>
+            <p>
+            多くの20代～40代の女性は、急に太ったりし、パニックに陥ると、エステでダイエットと考えてしまうようです。 エステに通って、ボディメイクやダイエットが痩せられ達成されるのだろうかと疑問を持たれている女性も多いと思います。また、もうすで...
+            </p>
+            <div class="panel-image">
+              <%= image_tag 'http://ttdemo2.wpengine.com/yogax/wp-content/uploads/sites/4/2017/01/yogax_slider_1.jpg' %>
+            </div>
+            <p>
+            くびれを作るためには毎日の努力の積み重ねが大事。日ごろから楽ちんな洋服を着ないようにしたり、腹筋に力を入れて生活したり、時間があるときにはエクササイズするなど、コツコツと心がけることが美しいくびれを作ることにつながるはず。気持ちがゆるんでいるとウエストまわりもゆるんでくるということですね。薄着の季節を乗り切るために、あなたも何かはじめてみませんか？
+            </p>
+            <br>
+            <blockquote class="pull-right" style="max-width: 250px">
+              <p>毎日の努力の積み重ねが大事</p>
+            </blockquote>
+            <p>
+            くびれを作るためには毎日の努力の積み重ねが大事。日ごろから楽ちんな洋服を着ないようにしたり、腹筋に力を入れて生活したり、時間があるときにはエクササイズするなど、コツコツと心がけることが美しいくびれを作ることにつながるはず。気持ちがゆるんでいるとウエストまわりもゆるんでくるということですね。薄着の季節を乗り切るために、あなたも何かはじめてみませんか？
+            </p>
+            <br>
+            <p>
+            くびれを作るためには毎日の努力の積み重ねが大事。日ごろから楽ちんな洋服を着ないようにしたり、腹筋に力を入れて生活したり、時間があるときにはエクササイズするなど、コツコツと心がけることが美しいくびれを作ることにつながるはず。気持ちがゆるんでいるとウエストまわりもゆるんでくるということですね。薄着の季節を乗り切るために、あなたも何かはじめてみませんか？
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <ul class="pager">
+            <li class="previous disabled"><a href="#">&larr; Previous</a></li>
+            <li class="next"><a href="#">Next &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Blog Details -->
+<%= render partial: 'common/mobile_app' %>
+<%= render partial: 'common/footer' %>
+
+<%= link_to new_training_path, data: { toggle: 'tooltip', placement: 'left', }, title: 'Post Your Ad', class: 'btn btn-primary btn-lg post-free-add-btn' do %>
+  <i class="fa fa-pencil"></i>
+<% end %>
+
+
+<!-- Back To Top -->
+<a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+<!-- End Back To Top -->
+

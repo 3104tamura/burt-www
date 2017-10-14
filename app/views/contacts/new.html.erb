@@ -1,0 +1,91 @@
+<%= render partial: 'common/header' %>
+
+<section class="breadcumb_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="breadcumb_section">
+          <div class="page_title">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="page_pagination">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Breadcumb -->
+
+<!-- Contact Us -->
+<section class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ">
+        <div class="widget top-space margin-bottom-none">
+          <div class="widget-header">
+            <h1>Contact Us</h1>
+          </div>
+          <form method="GET" action="#" id="contactForm" novalidate="novalidate">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-6">
+                  <label class="control-label">ご担当者名 <span class="required">*</span></label>
+                  <input type="text" name="" value="" placeholder="ブリュット太郎" class="form-control" maxlength="100">
+                </div>
+                <div class="col-md-6">
+                  <label class="control-label">会社名 <span class="required">*</span></label>
+                  <input type="text" name="" value="" placeholder="株式会社○○○○○" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label">メールアドレス</label>
+              <input type="text" name="" value="" placeholder="○○○○○@mail.co.jp" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="control-label">件名</label>
+              <input type="text" name="" value="" placeholder="トレーナ-について" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="control-label">メッセージ <span class="required">*</span></label>
+              <textarea placeholder="問い合わせ内容" name="message" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="text-right">
+              <input type="submit" class="btn btn-primary" value="Send Message">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="widget margin-bottom-none">
+          <div class="widget-header">
+            <h1>お問い合わせについて</h1>
+          </div>
+          <p>いつもBRUTをご利用頂き誠にありがとうございます。<br>お問い合わせの返事に関しては担当の者から1日〜7日程でお返事させて頂きます。
+          少々お待ちください。</p>
+          <hr>
+          <h4 class="heading-primary">株式会社<strong>BRUT</strong></h4>
+          <ul class="list list-icons list-icons-style-3 mt-xlg">
+            <li><i class="fa fa-fw fa-map-marker"></i> <strong>Address:</strong> 〒106-0032 東京都港区六本木１丁目９−１０</li>
+            <li><i class="fa fa-fw fa-phone"></i> <strong>Phone:</strong> (123) 456-789</li>
+            <li><i class="fa fa-fw fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@brut.com</a></li>
+          </ul>
+          <hr>
+          <h4 class="heading-primary">営業時間</h4>
+          <ul class="list list-icons list-dark mt-xlg">
+            <li><i class="fa fa-fw fa-clock-o"></i>平日 - 10時 〜 19時</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render partial: 'common/mobile_app' %>
+<%= render partial: 'common/footer' %>
