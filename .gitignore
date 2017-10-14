@@ -45,3 +45,4 @@ bower.json
 
 # Ignore encrypted secrets key file.
 config/secrets.yml.key
+database.yml
