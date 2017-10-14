@@ -14,7 +14,7 @@ development:
   <<: *default
   user:
   password:
-  database: burt_deveplopment
+  database: brut_deveplopment
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,9 +23,9 @@ test:
   <<: *default
   user:
   password:
-  database: burt_test
+  database: brut_test
 
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: bur
+  database: brut
