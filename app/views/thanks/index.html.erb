@@ -1,0 +1,59 @@
+<%= render partial: 'common/header' %>
+<!-- Breadcumb -->
+<section class="breadcumb_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="breadcumb_section">
+          <div class="page_title">
+            <h3>会員登録完了</h3>
+          </div>
+          <div class="page_pagination">
+            <ul>
+              <li>
+                <%= link_to 'Home', root_path %>
+              </li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li>Sign Up</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Breadcumb -->
+
+<!-- Login -->
+<section class="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4">
+        <div class="login-panel widget">
+          <div class="login-body">
+            <p class="text-center margin-bottom-none">
+            <b style="color: #BF3D61;">ご登録ありがとうございます。</b><br>
+            只今a版BRUTは開発中でございますので、リリースまでもう少々お待ちください。<br>
+            リリースの際はご登録のメールアドレスへご連絡させて頂きます。
+            </p>
+            <p class="text-center margin-bottom-none">
+            <%= link_to root_path do %>
+              <strong>topへ戻る</strong>
+            <% end %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Login -->
+
+<%= render partial: 'common/footer' %>
+<!-- Post Ad -->
+<a href="create_post.html" data-toggle="tooltip" data-placement="left" title="Post Your Ad" class="btn btn-primary btn-lg post-free-add-btn"><i class="fa fa-pencil"></i></a>
+<!-- End Post Ad -->
+
+<!-- Back To Top -->
+<a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+<!-- End Back To Top -->

@@ -4,6 +4,7 @@ class Admin::UsersController < ApplicationController
   def index; end
 
   private
+
   def set_users
     @users = User.all
   end
