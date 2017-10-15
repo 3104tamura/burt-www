@@ -18,6 +18,8 @@ Rails.application.routes.draw do
     post 'sign_up' => 'devise/regstrations#create'
   end
 
+  resources :thanks, only: %w[index]
+
   namespace :admin do
     resources :users, only: %w[index]
   end
