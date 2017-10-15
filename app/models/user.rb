@@ -6,7 +6,6 @@ class User < ApplicationRecord
          :omniauthable, omniauth_providers: [:facebook]
 
   validates :nickname, :gender, presence: true, on: :create
-  validates :terms_of_service, acceptance: true, on: :create
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
@@ -22,7 +21,6 @@ class User < ApplicationRecord
                       2
                  end
       # FIXME: 暫定
-      user.terms_of_service = '1'
       user.nickname = 'facebook認証'
 
       user.password = Devise.friendly_token[0, 20]
