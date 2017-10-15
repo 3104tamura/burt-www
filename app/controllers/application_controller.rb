@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
   def required_logout!
     sign_out current_user if user_signed_in?
   end
+
+  def after_sign_out_path_for(_resource_or_scope)
+    thanks_path
+  end
 end
