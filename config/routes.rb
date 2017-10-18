@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get "/faq" => redirect('/questions')
+  get "/contact" => redirect('contacts/new')
+  get "/blog" => redirect('blogs')
+  get "/blog_details" => redirect('blogs/detail')
+
   resources :tops, only: :index
   resources :categories, only: :index
   resources :questions, only: :index
