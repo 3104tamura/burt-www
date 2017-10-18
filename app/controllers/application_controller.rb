@@ -6,10 +6,14 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname, :gender, :terms_of_service])
+    devise_parameter_sanitizer.permit(:sign_up, keys: %i[nickname gender terms_of_service])
   end
 
   def required_logout!
     sign_out current_user if user_signed_in?
+  end
+
+  def after_sign_out_path_for(_resource_or_scope)
+    thanks_path
   end
 end
