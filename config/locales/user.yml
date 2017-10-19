@@ -1,10 +1,9 @@
 ja:
   activerecord:
     models:
-      user: ユーザ
+      user: ユーザー
     attributes:
       user:
-        terms_of_service: 利用規約
         password: パスワード
         nickname: ニックネーム
         gender: 性別
