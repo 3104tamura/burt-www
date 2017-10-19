@@ -30,4 +30,6 @@ Rails.application.routes.draw do
   end
 
   root 'tops#index'
+
+  match '*not_found' => 'application#routing_error', via: %w[get post]
 end
