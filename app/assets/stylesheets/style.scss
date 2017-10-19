@@ -61,6 +61,24 @@ body {
 .mt40{
   margin-top: 40px;
 }
+.display-block{
+  display: block;
+}
+
+.radio-inline, .checkbox-inline {
+    display: inline;
+}
+
+.control-label .checkbox-inline{
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
 /*--------------------------------
 Service-img
 ---------------------------------*/
@@ -912,8 +930,14 @@ section {
 
 .btn-facebook {
   background: #3b589a none repeat scroll 0 0;
+  text-align: center;
 }
-
+.btn-facebook:hover{
+  box-shadow:0px 0px 17px 0px #628eff;
+  -moz-box-shadow:0px 0px 17px 0px #628eff;
+  -webkit-box-shadow:0px 0px 17px 0px #628eff;
+  color: #fff !important;
+}
 .btn-google {
   background: #cf4332 none repeat scroll 0 0;
 }
@@ -2768,7 +2792,7 @@ footer .copyright .fa-heart {
 
 @media screen and (max-width: 480px) {
   .link-inner strong{
-    font-size: 96px;
+    font-size: 80px;
   }
   .links{
     border: #be3e62 1px solid;
@@ -2776,3 +2800,26 @@ footer .copyright .fa-heart {
     min-height: 175px !important;
   }
 }
+
+////////////////////////////////
+// エラー文言
+///////////////////////////////
+
+#error_explanation h2{
+  font-size: 14px;
+  color: #BF3D61;
+  line-height: 1.4;
+  border: 1px solid;
+  padding: 4px;
+  border-radius: 5px;
+  background: #ffeff3;
+}
+#error_explanation ul li{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #BF3D61;
+}
+#error_explanation ul{
+  margin-top: 10px;
+}
+
