@@ -363,7 +363,12 @@ $(document).ready(function(){
     slideSpeed : 100,//スライドのスピード
     paginationSpeed : 800, //ページネーションの際のスピード
     rewindSpeed : 1000, //
-  });
 
+  });
+  owl.owlCarousel({
+    items : 4,
+    itemsTablet: [600,2],
+    itemsMobile : false
+    });
 });
 </script>

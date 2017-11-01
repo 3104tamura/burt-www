@@ -11,27 +11,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/css/swiper.min.css" />
     <style type="text/css">
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
-      
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-    </style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      @media screen and (max-width: 480px) {
+        #featured-reservation .swiper-container{
+          overflow-y: hidden;
+          margin-left: -5.33333333vmin;
+          margin-right: -5.33333333vmin;
+          width: initial;
+          }
+        #featured-reservation .swiper-wrapper{
+          left: -82px !important;
+        }
+      } 
+      </style>
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
 
@@ -60,6 +70,20 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      breakpoints: {
+          767: {
+            loop: false,
+            slidesPerView: 2,
+             slidesPerGroup: 1,
+          offsetSlidesBefore: 0,
+          spaceBetween: 10,
+          freeMode: true,
+          centeredSlides: true,
+          grabCursor: true,
+          width: 420,
+          
+        }
+      }
     });
   </script>
   </body>

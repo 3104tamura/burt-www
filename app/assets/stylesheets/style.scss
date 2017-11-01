@@ -775,6 +775,12 @@ section {
 .item-ads-grid .item-meta, .single-item-meta {
   padding: 20px;
 }
+@media screen and (max-width: 480px) {
+  .item-ads-grid .item-meta, .single-item-meta {
+  padding: 20px;
+  font-size: 12px;
+}
+}
 
 .item-title {
   border-bottom: 2px solid;
