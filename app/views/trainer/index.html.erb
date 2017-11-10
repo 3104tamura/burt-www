@@ -1,0 +1,151 @@
+<%= render partial: 'common/header' %>
+
+<!-- Breadcumb -->
+<section class="breadcumb_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="breadcumb_section">
+          <div class="page_title">
+            <h3>トレーナー登録</h3>
+          </div>
+          <div class="page_pagination">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li>トレーナー登録</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Breadcumb -->
+
+<!-- Create Post -->
+<section class="create-post">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="login-panel widget margin-bottom-none">
+          <div class="login-body">
+            <form>
+              <div class="form-group">
+                <label class="control-label">名前 <span class="required">*</span></label>
+                <input type="text" placeholder="BRUT田中" required="required" value="" class="form-control border-form">
+              </div>
+              <div class="form-group">
+                <label class="control-label">年齢 <span class="required">*</span></label>
+                <select class="form-control border-form">
+                  <option selected="">選択</option>
+                  <option>20代</option>
+                  <option>30代</option>
+                  <option>40代</option>
+                  <option>50代</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label">メールアドレス <span class="required">*</span></label>
+                <input type="email" placeholder="○○○@mail.co.jp" required="required" value="" class="form-control border-form">
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <label class="col-sm-3 control-label">得意なカテゴリ <span class="required">*</span></label>
+                  <div class="col-sm-9 list_container">
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio1" value="option1" name="radioInline" >
+                      <label for="inlineRadio1">ダイエット・ボディメイク</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio2" value="option1" name="radioInline">
+                      <label for="inlineRadio2">美容・アンチエイジング</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio3" value="option1" name="radioInline" >
+                      <label for="inlineRadio3">筋量・筋力アップ</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio4" value="option1" name="radioInline">
+                      <label for="inlineRadio4">ジョギング・ランニング</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio5" value="option1" name="radioInline" >
+                      <label for="inlineRadio5">スポーツ・格闘技</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio6" value="option1" name="radioInline">
+                      <label for="inlineRadio6">ヨガ・ピラティス</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio7" value="option1" name="radioInline" >
+                      <label for="inlineRadio7">ストレッチ</label>
+                    </div>
+                    <div class="checkbox radio-info radio-inline">
+                      <input type="checkbox" id="inlineRadio8" value="option1" name="radioInline">
+                      <label for="inlineRadio8">サプリメント・食事指導</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="control-label">プロフィール画像<span class="required">*</span></label>
+                <input type="file" class="filestyle">
+                <span class="help-block"></span>
+                
+              </div>
+              <div class="form-group">
+                <label class="control-label">対応可能な範囲<span class="required">*</span></label>
+                <select class="form-control border-form">
+                  <option selected="">選択してください。</option>
+                  <option>東京</option>
+                  <option>東京23区外</option>
+                  <option>山手線圏内</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label">自己紹介 <span class="required">*</span></label>
+                <textarea placeholder="経歴やプロフィールを記入ください。" class="form-control border-form" rows="4" required="required"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="control-label">保有している資格など</label>
+                <textarea placeholder="受賞暦や資格などご記入ください。" class="form-control border-form" rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="control-label">ユーザーへ一言<span class="required">*</span></label>
+                <textarea placeholder="例：一緒に頑張りましょう!!など" class="form-control border-form" rows="4" required="required"></textarea>
+              </div>
+
+              <!-- <div class="form-group">
+                <label class="control-label">Your email <span class="required">*</span></label>
+                <input type="text" placeholder="e.g. jon@gmail.com" required="required" value="" class="form-control border-form">
+                </div>
+                <div class="form-group">
+                <label class="control-label">Phone number <span class="required">*</span></label>
+                <div class="input-group">
+                <span class="input-group-addon">+44</span>
+                <input type="text" placeholder="e.g. 123456789" required="required" value="" class="form-control border-form">
+                </div>
+                </div> -->
+                <div class="form-group text-right margin-bottom-none">
+                  <button type="submit" class="col-xs-12 btn btn-success"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> 送信 </button>
+                  <!-- <button type="submit" class="btn btn-danger"><i class="fa fa-close"></i> Cancel</button> -->
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Create Post -->
+<%= render partial: 'common/footer' %>
+
+<%= link_to new_training_path, data: { toggle: 'tooltip', placement: 'left', }, title: 'Post Your Ad', class: 'btn btn-primary btn-lg post-free-add-btn' do %>
+  <i class="fa fa-pencil"></i>
+<% end %>
+
+<!-- Back To Top -->
+<a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+<!-- End Back To Top -->

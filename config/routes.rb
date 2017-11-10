@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :tops, only: :index
   resources :categories, only: :index
   resources :questions, only: :index
+  resources :trainer, only: :index
   resources :contacts, only: %w[new create]
   resources :blogs, only: %w[index] do
     collection do
