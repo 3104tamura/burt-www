@@ -21,15 +21,21 @@ Rails.application.routes.draw do
   end
 
   devise_for :users, path: 'users', path_names: { sign_in: 'login', sign_out: 'logout' },
-                     controllers: { sessions: 'users/sessions', registrations: "users/registrations"}, skip: %w[logout password]
+                     controllers: { sessions: 'users/sessions', registrations: "users/registrations" }, skip: %w[logout password]
+
+  devise_for :trainers, path: 'trainers', path_names: { sign_in: 'login', sign_out: 'logout' },
+                     controllers: { sessions: 'trainers/sessions', registrations: "trainers/registrations" }, skip: %w[logout password]
+
 
   devise_scope :user do
-    get "/auth/:provider/callback" => "authentications#create"
+    get "/auth/user_from_facebook/callback" => "users#from_facebook"
   end
-  as :user do
-    get 'sign_up' => 'devise/regstrations#new'
-    post 'sign_up' => 'devise/regstrations#create'
+
+  devise_scope :trainer do
+    get "/auth/trainer_from_facebook/callback" => "trainers#from_facebook"
   end
+
+  resources :trainers, only: %w[index edit update]
 
   resources :thanks, only: %w[index]
 

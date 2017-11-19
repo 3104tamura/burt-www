@@ -6,7 +6,7 @@
       <div class="col-xs-12 text-center">
         <div class="breadcumb_section">
           <div class="page_title">
-            <h3>事前会員登録</h3>
+            <h3>事前トレーナー登録</h3>
           </div>
           <div class="page_pagination">
             <ul>
@@ -68,14 +68,14 @@
               </div>
 
               <div class="form-group">
-                <%= f.submit '事前会員登録', class: 'btn btn-block btn-lg btn-primary' %>
+                <%= f.submit '事前トレーナー登録', class: 'btn btn-block btn-lg btn-primary' %>
               </div>
               <a href="https://goo.gl/forms/1jjuGCdvIskA4d833">
                 <div class="login-with-sites">
                   <% # FIXME: buttonからlinkに変更したことによるデザイン崩れ %>
-                  <%# link_to user_facebook_omniauth_authorize_path, class: 'btn-facebook login-icons btn-lg btn-block' do %>
+                  <%= link_to '/auth/trainer_from_facebook', class: 'btn-facebook login-icons btn-lg btn-block' do %>
                     <i class="fa fa-facebook"></i>　Facebookで登録
-                  <% # end %>
+                  <% end %>
                 </div>
               </a>
 

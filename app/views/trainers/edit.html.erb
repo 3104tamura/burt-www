@@ -1,0 +1,113 @@
+<%= render partial: 'common/header' %>
+
+<!-- Breadcumb -->
+<section class="breadcumb_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="breadcumb_section">
+          <div class="page_title">
+            <h3>トレーナー登録</h3>
+          </div>
+          <div class="page_pagination">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li>トレーナー登録</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Breadcumb -->
+
+<!-- Create Post -->
+<section class="create-post">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="login-panel widget margin-bottom-none">
+          <div class="login-body">
+            <% if @trainer.errors.any? %>
+              <div id="error_explanation">
+                <h2><%= "#{@trainer.errors.size}件のエラーが発生したため トレーナーは保存されませんでした。" %></h2>
+                <ul>
+                  <% @trainer.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                  <% end %>
+                </ul>
+              </div>
+            <% end %>
+            <%= form_with(model: @trainer, local: true) do |f| %>
+              <div class="form-group">
+                <label class="control-label">名前 <span class="required">*</span></label>
+                <%= f.text_field :name, class: 'form-control border-form', placeholder: 'BRUT田中', requred: 'required' %>
+              </div>
+              <div class="form-group">
+                <label class="control-label">年齢 <span class="required">*</span></label>
+                <%= f.select :age, options_for_select([['20代', '0'], ['30代', '1'], ['40代', '2'], ['50代', '3']], selected: f.object.age.to_s), { include_blank: '選択' } , { class: 'form-control border-form' } %>
+              </div>
+              <div class="form-group">
+                <label class="control-label">メールアドレス <span class="required">*</span></label>
+                <%= f.email_field :email, class: 'form-control border-form', placeholder: '○○○@mail.co.jp', required: 'required' %>
+              </div>
+              <div class="form-group">
+                <div class="row">
+                  <label class="col-sm-3 control-label">得意なカテゴリ <span class="required">*</span></label>
+                  <div class="col-sm-9 list_container">
+                    <% Category.all.each.with_index(1) do |category, index|  %>
+                      <div class="checkbox radio-info radio-inline">
+                        <%= check_box_tag 'trainer[category_ids][]', category.id, params[:category_ids]&.one? { |id| id == category.id.to_s }, id: "inlineRadio#{index}" %>
+                        <label for="inlineRadio<%= index %>"><%= category.name %></label>
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label">プロフィール画像<span class="required">*</span></label>
+                <%= f.file_field :cover, class: 'filestyle' %>
+                <span class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <label class="control-label">対応可能な範囲<span class="required">*</span></label>
+                <%= f.select :area, options_for_select([['東京', '0'], ['東京23区外', '1'], ['山手線圏内', '2']], selected: f.object.area.to_s), { include_blank: '選択してください' }, { class: 'form-control border-form' } %>
+              </div>
+              <div class="form-group">
+                <label class="control-label">自己紹介 <span class="required">*</span></label>
+                <%= f.text_area :profile, class: 'form-control border-form', required: 'required', placeholder: '経歴やプロフィールを記入ください。', rows: 4 %>
+              </div>
+              <div class="form-group">
+                <label class="control-label">保有している資格など</label>
+                <%= f.text_area :licence_and_award_received, class: 'form-control border-form', placeholder: '受賞暦や資格などご記入ください。', rows: 4 %>
+              </div>
+              <div class="form-group">
+                <label class="control-label">ユーザーへ一言<span class="required">*</span></label>
+                <%= f.text_area :comment_to_users, class: 'form-control border-form', required: 'required', placeholder: '例：一緒に頑張りましょう!!など', rows: 4 %>
+              </div>
+
+                <div class="form-group text-right margin-bottom-none">
+                  <%= f.submit class: 'col-xs-12 btn btn-success' do %>
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i> 送信 </button>
+                  <% end %>
+                </div>
+              <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Create Post -->
+<%= render partial: 'common/footer' %>
+
+<%= link_to new_training_path, data: { toggle: 'tooltip', placement: 'left', }, title: 'Post Your Ad', class: 'btn btn-primary btn-lg post-free-add-btn' do %>
+  <i class="fa fa-pencil"></i>
+<% end %>
+
+<!-- Back To Top -->
+<a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="Back To Top" class="btn btn-default btn-md"><i class="fa fa-chevron-up"></i></a>
+<!-- End Back To Top -->

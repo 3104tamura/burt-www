@@ -11,6 +11,8 @@
         <%= image_tag asset_path('logo.png'), alt: 'logo' %>
       <% end %>
     </div>
+
+    <% # link_to 'ログアウト', destroy_trainer_session_path, method: :delete  %>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
@@ -20,11 +22,10 @@
           <%= link_to  categories_path, class: 'dropdown-toggle' do %>
             カテゴリから選ぶ<b class="caret"></b>
             <ul class="dropdown-menu">
-                        <li>
-                           <a href="categories"><i class="fa fa-fw fa-angle-right"></i>ヨガ</a>
-                        </li>
-
-                     </ul>
+              <li>
+                <a href="categories"><i class="fa fa-fw fa-angle-right"></i>ヨガ</a>
+              </li>
+            </ul>
           <% end %>
         </li>
         <li>
