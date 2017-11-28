@@ -24,7 +24,7 @@ class Trainer < ApplicationRecord
   end
 
   before_validation :set_category_trainers
-  before_validation :destroy_category_trainers
+  after_update :destroy_category_trainers
 
   def initialize(*args)
     @category_ids = []
