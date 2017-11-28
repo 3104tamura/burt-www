@@ -1,0 +1,46 @@
+<div class="col-sm-9 ml-sm-auto col-md-10 pt-3" style="margin-left: 15px;">
+  <h1>トレーナー一覧(登録数: <%= @trainers.size %>)</h1>
+
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Name</th>
+          <th>NickName</th>
+          <th>area</th>
+          <th>得意なカテゴリ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @trainers.each do |trainer| %>
+          <tr>
+            <td><%= trainer.id %></td>
+            <td><%= trainer.email %></td>
+            <td><%= "#{trainer.last_name} #{trainer.first_name}" %></td>
+            <td><%= trainer.nickname %></td>
+            <td><%= case trainer.area
+                    when 0
+                      '東京'
+                    when 1
+                      '東京23区外'
+                    when 2
+                      '山手線圏内'
+                    else
+                      '未登録'
+                    end
+              %></td>
+            <td>
+              <%=
+                trainer.categories.map do |category|
+                  category.name
+                end.join(",")
+              %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
