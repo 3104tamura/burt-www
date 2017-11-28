@@ -63,7 +63,7 @@ class Trainer < ApplicationRecord
 
   def destroy_category_trainers
     category_trainers.each do |category_trainer|
-      next if @category_ids.include?(category_trainer.id.to_s)
+      next if @category_ids.include?(category_trainer.category_id.to_s)
       category_trainer.destroy
     end
   end
