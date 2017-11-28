@@ -251,7 +251,7 @@ config.secret_key = '2968ccf627befebdab1842533c25ec8545dd2156d66685fafa6f3a8ed76
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, Rails.application.secrets.facebook[:app_id], Rails.application.secrets.facebook[:app_secret]
+  # config.omniauth :facebook, Rails.application.secrets.facebook[:app_id], Rails.application.secrets.facebook[:app_secret]
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

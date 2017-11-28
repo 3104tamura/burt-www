@@ -1,0 +1,18 @@
+ja:
+  activerecord:
+    models:
+      trainer: トレーナー
+    attributes:
+      trainer:
+        name: 名前
+        age: 年齢
+        email: メールアドレス
+        category_trainers: 得意なカテゴリ
+        area: 対応可能な範囲
+        licence_and_award_received: 保有している資格など
+        profile: 自己紹介
+        comment_to_users: ユーザーへ一言
+        password: パスワード
+        nickname: ニックネーム
+        gender: 性別
+        cover: プロフィール画像

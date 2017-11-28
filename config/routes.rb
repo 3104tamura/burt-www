@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   resources :tops, only: :index
   resources :categories, only: :index
   resources :questions, only: :index
-  resources :trainer, only: :index
   resources :contacts, only: %w[new create]
   resources :blogs, only: %w[index] do
     collection do
@@ -21,13 +20,22 @@ Rails.application.routes.draw do
     end
   end
 
-  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout' },
-                     controllers: { omniauth_callbacks: 'users/omniauth_callbacks', registrations: "registrations"}, skip: %w[session logout password regstration]
+  devise_for :users, path: 'users', path_names: { sign_in: 'login', sign_out: 'logout' },
+                     controllers: { sessions: 'users/sessions', registrations: "users/registrations" }, skip: %w[logout password]
 
-  as :user do
-    get 'sign_up' => 'devise/regstrations#new'
-    post 'sign_up' => 'devise/regstrations#create'
+  devise_for :trainers, path: 'trainers', path_names: { sign_in: 'login', sign_out: 'logout' },
+                     controllers: { sessions: 'trainers/sessions', registrations: "trainers/registrations" }, skip: %w[logout password]
+
+
+  devise_scope :user do
+    get "/auth/user_from_facebook/callback" => "users#from_facebook"
   end
+
+  devise_scope :trainer do
+    get "/auth/trainer_from_facebook/callback" => "trainers#from_facebook"
+  end
+
+  resources :trainers, only: %w[index edit update]
 
   resources :thanks, only: %w[index]
 
@@ -37,5 +45,5 @@ Rails.application.routes.draw do
 
   root 'tops#index'
 
-  match '*not_found' => 'application#routing_error', via: %w[get post]
+  # match '*not_found' => 'application#routing_error', via: %w[get post]
 end

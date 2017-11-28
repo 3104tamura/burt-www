@@ -73,9 +73,9 @@
               <a href="https://goo.gl/forms/1jjuGCdvIskA4d833">
                 <div class="login-with-sites">
                   <% # FIXME: buttonからlinkに変更したことによるデザイン崩れ %>
-                  <%# link_to user_facebook_omniauth_authorize_path, class: 'btn-facebook login-icons btn-lg btn-block' do %>
+                  <%= link_to '/auth/user_from_facebook', class: 'btn-facebook login-icons btn-lg btn-block' do %>
                     <i class="fa fa-facebook"></i>　Facebookで登録
-                  <% # end %>
+                  <% end %>
                 </div>
               </a>
 

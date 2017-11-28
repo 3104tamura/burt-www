@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :required_logout!
 
   # 404, 500のページデザインのため
-  #if Rails.env.production?
+  if Rails.env.production?
     rescue_from Exception,                        with: :_render_500
     rescue_from ActiveRecord::RecordNotFound,     with: :_render_404
     rescue_from ActionController::RoutingError,   with: :_render_404
-  #end
+  end
 
   def routing_error
     raise ActionController::RoutingError, params[:path]
